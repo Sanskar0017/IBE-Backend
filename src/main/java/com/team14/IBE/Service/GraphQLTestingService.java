@@ -23,4 +23,8 @@ public class GraphQLTestingService {
         HttpEntity<String> requestEntity = new HttpEntity<>(requestBody, httpHeaders);
         return restTemplate.exchange(graphqlEndpoint, HttpMethod.POST, requestEntity, String.class);
     }
+    public ResponseEntity<String> sampleTest() {
+        // Return the correct response
+        return ResponseEntity.ok("Hello This is Sanskar!!");
+    }
 }

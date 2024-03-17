@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e14347ff-41de-49ab-8940-7ad47e830f8d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fab3ec7b28fc8fec55a669defb0bf72dc7e3b6a0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fab3ec7b28fc8fec55a669defb0bf72dc7e3b6a0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/IBE/Service/GraphQLTestingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/IBE/Service/GraphQLTestingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/IBE/IbeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/IBE/IbeApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,27 +33,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.IbEbackendApplication.executor": "Run",
-    "Application.IbeApplication.executor": "Run",
-    "JUnit.GraphQLTestingServiceTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "PTN-7",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/lenovo/ibe-final/IBE-Backend",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.IbEbackendApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IbeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GraphQLTestingServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;PTN-23&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/lenovo/ibe-final/IBE-Backend&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IbeApplication">
+  <component name="RunManager" selected="JUnit.GraphQLTestingServiceTest (1)">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -100,6 +97,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GraphQLTestingServiceTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IBE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.team14.IBE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.team14.IBE" />
+      <option name="MAIN_CLASS_NAME" value="com.team14.IBE.GraphQLTestingServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GraphQLTestingServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IBE" />
       <extension name="coverage">
@@ -130,6 +142,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GraphQLTestingServiceTest (1)" />
         <item itemvalue="Application.IbeApplication" />
         <item itemvalue="JUnit.GraphQLTestingServiceTest" />
       </list>
@@ -152,5 +165,10 @@
       <updated>1709726011234</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IBE_Backend$IBEApplicationTests.ic" NAME="IBEApplicationTests Coverage Results" MODIFIED="1710687822108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.team14.IBE.*</FILTER>
+    </SUITE>
   </component>
 </project>

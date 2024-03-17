@@ -27,3 +27,6 @@ public class TenantConfigController {
         return new ResponseEntity<>(configData, HttpStatus.OK);
     }
 }
+
+
+

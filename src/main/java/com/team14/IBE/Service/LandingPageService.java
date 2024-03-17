@@ -12,12 +12,9 @@ import java.util.*;
 public class LandingPageService {
     @Value("${api.key}")
     private String apiKey;
-
     @Value("${graphql.endpoint}")
     private String graphqlEndpoint;
-
     private final RestTemplate restTemplate = new RestTemplate();
-
     public Map<String, Double> getMinimumPricesByDate() {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
@@ -33,22 +30,24 @@ public class LandingPageService {
         Map<String, Double> minimumPricesByDate = new TreeMap<>();
         try {
             JsonNode responseJson = objectMapper.readTree(responseBody);
-            JsonNode roomRates = responseJson.get("data").get("getProperty").get("room_type").get(0).get("room_rates");
+            JsonNode roomTypes = responseJson.get("data").get("getProperty").get("room_type");
+            for (JsonNode roomType : roomTypes) {
+                JsonNode roomRates = roomType.get("room_rates");
 
-            for (JsonNode roomRate : roomRates) {
-                String date = roomRate.get("room_rate").get("date").asText().split("T")[0];
-                double price = roomRate.get("room_rate").get("basic_nightly_rate").asDouble();
+                for (JsonNode roomRate : roomRates) {
+                    String date = roomRate.get("room_rate").get("date").asText().split("T")[0];
+                    double price = roomRate.get("room_rate").get("basic_nightly_rate").asDouble();
 
-                if (!minimumPricesByDate.containsKey(date)) {
-                    minimumPricesByDate.put(date, price);
-                } else {
-                    double currentMinimumPrice = minimumPricesByDate.get(date);
-                    minimumPricesByDate.put(date, Math.min(currentMinimumPrice, price));
+                    if (!minimumPricesByDate.containsKey(date)) {
+                        minimumPricesByDate.put(date, price);
+                    } else {
+                        double currentMinimumPrice = minimumPricesByDate.get(date);
+                        minimumPricesByDate.put(date, Math.min(currentMinimumPrice, price));
+                    }
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
-            // Handle exception
         }
         return minimumPricesByDate;
     }

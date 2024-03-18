@@ -11,3 +11,7 @@ e
 5src/test/java/com/team14/IBE/IbeApplicationTests.java,f/a/fab3ec7b28fc8fec55a669defb0bf72dc7e3b6a0
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+e
+5src/main/java/com/team14/IBE/Service/BlobService.java,d/4/d4e574018f67c292d9831079a1f622254bf92aa5
+e
+5src/main/java/com/team14/IBE/modals/TenantConfig.java,c/e/cedbbf40e97372e7d24740e755af11b40f7776ac

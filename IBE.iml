@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
+  <component name="FacetManager">
+    <facet type="azure" name="Azure">
+      <configuration>
+        <option name="dotAzurePath" value="$MODULE_DIR$/.azure" />
+      </configuration>
+    </facet>
+  </component>
   <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="ffd4f6fe-35fa-451e-a06c-d8eb8dbb033f" />
+    <option name="uniqueId" value="67f117f1-c21f-4dda-b889-3067c0f7acf6" />
   </component>
 </module>

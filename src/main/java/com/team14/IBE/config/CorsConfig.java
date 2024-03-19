@@ -13,7 +13,8 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-              .allowedOrigins("https://white-dune-044f84310-7.centralus.4.azurestaticapps.net/")
+              .allowedOrigins("https://white-dune-044f84310.4.azurestaticapps.net/")
+                .allowedOrigins("http://localhost:5184/")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*")
                 .allowCredentials(true)

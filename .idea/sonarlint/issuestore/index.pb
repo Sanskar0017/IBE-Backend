@@ -37,3 +37,5 @@ l
 <src/main/java/com/team14/IBE/Service/LandingPageService.java,c/3/c3abfda7a561fa3185d6181091ae6d1093dfe153
 g
 7src/main/java/com/team14/IBE/Service/TenantService.java,6/5/652a18dce4d97b753357c9c55a3b0842e6e0e7d4
+c
+3src/main/java/com/team14/IBE/config/CorsConfig.java,d/5/d571848d079d564f5881181b87c0db6e41c02641

@@ -1,11 +1,4 @@
 
-b	java:S112'"FDefine and throw a dedicated exception instead of using a generic one.(ˆßÛ…8¬¨ıµä1
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÔÓƒ‚8ä®şµä1
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¸¨ıµä1
-Q
-java:S1172"4Remove this unused method parameter "containerName".(äİ¼²8³ê’¶ä1
-M
-java:S1172,"+Remove this unused method parameter "name".(Í€şáûÿÿÿÿ8Ç”¶ä1
-H
-java:S11722"+Remove this unused method parameter "name".(ò¾ñÃ8ùú•¶ä1
+7
+java:S1220""Move this file to a named package.8òáêìä1
+X	java:S125"<This block of commented-out lines of code should be removed.(ìÁí8öáêìä1

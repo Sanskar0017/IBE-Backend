@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e14347ff-41de-49ab-8940-7ad47e830f8d" name="Changes" comment="">
+    <list default="true" id="11ff03fd-2d07-4417-aadd-49e26e0a7dff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/113dbec5dfc6be624535bc31de69697ff6c65d4e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/113dbec5dfc6be624535bc31de69697ff6c65d4e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/57a17bdc83118b571c3686339bef1297c2cec0f6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/57a17bdc83118b571c3686339bef1297c2cec0f6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c3abfda7a561fa3185d6181091ae6d1093dfe153" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c3abfda7a561fa3185d6181091ae6d1093dfe153" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d4e574018f67c292d9831079a1f622254bf92aa5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d4e574018f67c292d9831079a1f622254bf92aa5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fab3ec7b28fc8fec55a669defb0bf72dc7e3b6a0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fab3ec7b28fc8fec55a669defb0bf72dc7e3b6a0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,39 +33,46 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 1
 }</component>
-  <component name="ProjectId" id="2dJV8rLVKrobiCDsw37bISE4jCw" />
+  <component name="ProjectId" id="2dpAFERlUKp5WIfeJKCKq1j2nJX" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Application.IbEbackendApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.IbeApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GraphQLTestingServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IBEApplicationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LandingPageControllerTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LandingPageControllerTest (2).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LandingPageControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LandingPageControllerTest.testGetPropertyRates.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TenantConfigControllerTest.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;PTN-23&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/lenovo/ibe-final/IBE-Backend&quot;,
+    &quot;last_directory_selection&quot;: &quot;/home/lenovo/ibe-sharedzip/IBE-Backend/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/lenovo/ibe-sharedzip/IBE-Backend/src/test/java/com/team14/IBE&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/test/java/com/team14/IBE" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GraphQLTestingServiceTest (1)">
+  <component name="RunManager" selected="Application.IbeApplication">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
       <option name="appServicePlanResourceGroup" />
-      <option name="appSettingsKey" value="8e3b5713-cb09-4f3e-8c97-afbb596ae6f8" />
+      <option name="appSettingsKey" value="b56c6563-5cf6-4bf3-a8f6-d083b1e5d86d" />
       <option name="artifact" />
       <option name="debugOptions" />
       <option name="deployment" />
@@ -97,7 +111,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphQLTestingServiceTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IBEApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IBE" />
       <extension name="coverage">
         <pattern>
@@ -106,23 +120,54 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.team14.IBE" />
-      <option name="MAIN_CLASS_NAME" value="com.team14.IBE.GraphQLTestingServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.team14.IBE.IBEApplicationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphQLTestingServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LandingPageControllerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IBE" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.team14.IBE.Service.*" />
+          <option name="PATTERN" value="com.team14.IBE.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.team14.IBE.Service" />
-      <option name="MAIN_CLASS_NAME" value="com.team14.IBE.Service.GraphQLTestingServiceTest" />
+      <option name="PACKAGE_NAME" value="com.team14.IBE.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.team14.IBE.tests.LandingPageControllerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LandingPageControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IBE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.team14.IBE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.team14.IBE" />
+      <option name="MAIN_CLASS_NAME" value="com.team14.IBE.LandingPageControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LandingPageControllerTest.testGetPropertyRates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IBE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.team14.IBE.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.team14.IBE.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.team14.IBE.tests.LandingPageControllerTest" />
+      <option name="METHOD_NAME" value="testGetPropertyRates" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,9 +187,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GraphQLTestingServiceTest (1)" />
         <item itemvalue="Application.IbeApplication" />
-        <item itemvalue="JUnit.GraphQLTestingServiceTest" />
+        <item itemvalue="JUnit.IBEApplicationTest" />
+        <item itemvalue="JUnit.LandingPageControllerTest (1)" />
+        <item itemvalue="JUnit.LandingPageControllerTest.testGetPropertyRates" />
       </list>
     </recent_temporary>
   </component>
@@ -158,16 +204,39 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e14347ff-41de-49ab-8940-7ad47e830f8d" name="Changes" comment="" />
-      <created>1709726011234</created>
+      <changelist id="11ff03fd-2d07-4417-aadd-49e26e0a7dff" name="Changes" comment="" />
+      <created>1710694540591</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1709726011234</updated>
+      <updated>1710694540591</updated>
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="PTN-23" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IBE_Backend$IBEApplicationTests.ic" NAME="IBEApplicationTests Coverage Results" MODIFIED="1710687822108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/IBE_Backend$IBEApplicationTest.ic" NAME="IBEApplicationTest Coverage Results" MODIFIED="1710704718477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.team14.IBE.*</FILTER>
     </SUITE>
   </component>

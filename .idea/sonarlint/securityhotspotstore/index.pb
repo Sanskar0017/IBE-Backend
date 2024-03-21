@@ -91,3 +91,5 @@ j
 :src/main/java/com/team14/ibe/dto/response/RoomRateDTO.java,0/8/08caa675a746347fc104c6575edf2384f0e2ceb5
 g
 7src/main/java/com/team14/ibe/mapper/RoomDataMapper.java,3/d/3d272d8c668feef30644006168d95d24fddb2f3b
+k
+;src/test/java/com/team14/ibe/tests/TenantConfigDTOTest.java,f/5/f538b7143f32785c2048dce511e474239cdd59aa

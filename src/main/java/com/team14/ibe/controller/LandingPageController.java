@@ -1,6 +1,6 @@
-package com.team14.IBE.Controller;
+package com.team14.ibe.controller;
 
-import com.team14.IBE.Service.LandingPageService;
+import com.team14.ibe.service.LandingPageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;

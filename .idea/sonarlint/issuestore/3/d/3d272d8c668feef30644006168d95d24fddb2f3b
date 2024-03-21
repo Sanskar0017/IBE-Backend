@@ -1,0 +1,10 @@
+
+e
+java:S3824d"HReplace this "Map.containsKey()" with a call to "Map.computeIfAbsent()".(öª»ë8©Ùçýå1
+e
+java:S3824S"HReplace this "Map.containsKey()" with a call to "Map.computeIfAbsent()".(öª»ë8©Ùçýå1
+W
+java:S1854[":Remove this useless assignment to local variable "roomId".(ä±ÚË8íëëýå1
+X	java:S125+"<This block of commented-out lines of code should be removed.(ÑðÊ¾8íëëýå1
+H
+java:S1481["+Remove this unused "roomId" local variable.(ä±ÚË8ñëëýå1

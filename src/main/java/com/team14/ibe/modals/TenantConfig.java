@@ -1,4 +1,4 @@
-package com.team14.IBE.modals;
+package com.team14.ibe.modals;
 
 import com.azure.storage.blob.BlobClient;
 import com.azure.storage.blob.BlobContainerClient;

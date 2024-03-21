@@ -1,12 +1,13 @@
-package com.team14.IBE;
+package com.team14.ibe;
 
-import com.team14.IBE.dto.TenantConfigDTOTest;
-import com.team14.IBE.tests.LandingPageControllerTest;
-import com.team14.IBE.tests.TenantConfigControllerTest;
+import com.team14.ibe.dto.TenantConfigDTOTest;
+import com.team14.ibe.tests.LandingPageControllerTest;
+import com.team14.ibe.tests.RoomPageControllerTest;
+import com.team14.ibe.tests.TenantConfigControllerTest;
+import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
-import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -15,13 +16,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 
-import java.io.IOException;
-
 @SpringBootTest
 @AutoConfigureMockMvc
-@ComponentScan("com.team14.IBE")
+@ComponentScan("com.team14.ibe")
 @ExtendWith(SpringExtension.class)
-@TestMethodOrder(OrderAnnotation.class)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class IBEApplicationTest {
 
 	@Autowired
@@ -48,5 +47,14 @@ public class IBEApplicationTest {
 	void testTenantConfigDTO() {
 		TenantConfigDTOTest tenantConfigDTOTest = new TenantConfigDTOTest();
 		tenantConfigDTOTest.testTenantConfigDTO();
+	}
+
+	@Test
+	@Order(4)
+	void testRoomPageController() {
+		RoomPageControllerTest roomPageControllerTest = new RoomPageControllerTest();
+		roomPageControllerTest.setUp();
+		roomPageControllerTest.testGetAllRoomTypes();
+		roomPageControllerTest.testGetAllPromotions();
 	}
 }

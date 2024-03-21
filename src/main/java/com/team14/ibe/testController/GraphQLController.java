@@ -1,6 +1,6 @@
-package com.team14.IBE.TestController;
+package com.team14.ibe.testController;
 
-import com.team14.IBE.Service.GraphQLTestingService;
+import com.team14.ibe.service.GraphQLTestingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;

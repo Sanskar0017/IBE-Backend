@@ -1,4 +1,4 @@
-package com.team14.IBE.config;
+package com.team14.ibe.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

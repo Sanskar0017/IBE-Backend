@@ -37,7 +37,7 @@ public class RoomPageServiceTest {
         ResponseEntity<String> responseEntity = ResponseEntity.ok("{\"data\": {\"listRoomTypes\": []}}");
         when(restTemplate.exchange(anyString(), eq(HttpMethod.POST), any(HttpEntity.class), eq(String.class))).thenReturn(responseEntity);
 
-        List<RoomResponseDTO> roomTypes = roomPageService.getAllRoomTypes();
+        List<RoomResponseDTO> roomTypes = roomPageService.getAllRoomTypes(2,3);
 
         verify(restTemplate, times(1)).exchange(anyString(), eq(HttpMethod.POST), any(HttpEntity.class), eq(String.class));
 
@@ -51,7 +51,7 @@ public class RoomPageServiceTest {
         when(restTemplate.exchange(anyString(), eq(HttpMethod.POST), any(HttpEntity.class), eq(String.class))).thenReturn(responseEntity);
 
         // Call the service method
-        List<PromotionResponseDTO> promotions = roomPageService.getAllPromotions();
+        List<PromotionResponseDTO> promotions = roomPageService.getAllPromotions(2,3);
 
         // Verify restTemplate.exchange() is called once
         verify(restTemplate, times(1)).exchange(anyString(), eq(HttpMethod.POST), any(HttpEntity.class), eq(String.class));

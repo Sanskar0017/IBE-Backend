@@ -1,4 +1,4 @@
-package com.team14.IBE.Service;
+package com.team14.ibe.service;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;

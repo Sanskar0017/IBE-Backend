@@ -1,6 +1,6 @@
-package com.team14.IBE.Controller;
+package com.team14.ibe.controller;
 
-import com.team14.IBE.Service.TenantService;
+import com.team14.ibe.service.TenantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

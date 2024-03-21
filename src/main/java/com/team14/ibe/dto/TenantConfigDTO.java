@@ -1,4 +1,4 @@
-package com.team14.IBE.dto;
+package com.team14.ibe.dto;
 
 import lombok.Data;
 

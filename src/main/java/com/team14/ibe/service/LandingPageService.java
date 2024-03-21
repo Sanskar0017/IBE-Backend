@@ -1,4 +1,4 @@
-package com.team14.IBE.Service;
+package com.team14.ibe.service;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Value;

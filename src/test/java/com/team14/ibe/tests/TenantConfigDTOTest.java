@@ -1,4 +1,4 @@
-package com.team14.IBE.dto;
+package com.team14.ibe.dto;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

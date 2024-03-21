@@ -1,7 +1,7 @@
-package com.team14.IBE.tests;
+package com.team14.ibe.tests;
 
-import com.team14.IBE.Controller.TenantConfigController;
-import com.team14.IBE.Service.TenantService;
+import com.team14.ibe.controller.TenantConfigController;
+import com.team14.ibe.service.TenantService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

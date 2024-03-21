@@ -1,8 +1,8 @@
-package com.team14.IBE.mapper;
+package com.team14.ibe.mapper;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.team14.IBE.dto.TenantConfigDTO;
+import com.team14.ibe.dto.TenantConfigDTO;
 import org.springframework.stereotype.Component;
 import java.io.IOException;
 import java.util.Map;

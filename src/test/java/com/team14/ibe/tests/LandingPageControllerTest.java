@@ -1,7 +1,7 @@
-package com.team14.IBE.tests;
+package com.team14.ibe.tests;
 
-import com.team14.IBE.Controller.LandingPageController;
-import com.team14.IBE.Service.LandingPageService;
+import com.team14.ibe.controller.LandingPageController;
+import com.team14.ibe.service.LandingPageService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

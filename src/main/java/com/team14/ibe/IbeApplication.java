@@ -1,4 +1,4 @@
-package com.team14.IBE;
+package com.team14.ibe;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

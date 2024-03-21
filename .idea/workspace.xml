@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11ff03fd-2d07-4417-aadd-49e26e0a7dff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c066e961ac1bea46e4dff680554c30e6940ce3a6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c066e961ac1bea46e4dff680554c30e6940ce3a6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/tests/RoomPageControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/tests/RoomPageControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/tests/RoomPageServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/tests/RoomPageServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +39,7 @@
   "keyToString": {
     "Application.IbeApplication.executor": "Run",
     "IBE.wasFacetEverAdded": "true",
-    "JUnit.IBEApplicationTest.executor": "Coverage",
+    "JUnit.IBEApplicationTest.executor": "Run",
     "JUnit.LandingPageControllerTest (1).executor": "Run",
     "JUnit.LandingPageControllerTest (2).executor": "Run",
     "JUnit.LandingPageControllerTest.executor": "Run",
@@ -67,7 +68,7 @@
       <recent name="$PROJECT_DIR$/src/test/java/com/team14/IBE" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IbeApplication">
+  <component name="RunManager" selected="JUnit.TenantConfigDTOTest">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -98,50 +99,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IbeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.team14.ibe.IbeApplication" />
+    <configuration name="LandingPageControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IBE" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.team14.ibe.*" />
+          <option name="PATTERN" value="com.team14.ibe.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IBEApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IBE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.team14.ibe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.team14.ibe" />
-      <option name="MAIN_CLASS_NAME" value="com.team14.ibe.IBEApplicationTest" />
+      <option name="PACKAGE_NAME" value="com.team14.ibe.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.team14.ibe.tests.LandingPageControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LandingPageControllerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IBE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.team14.IBE.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.team14.IBE.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.team14.IBE.tests.LandingPageControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoomPageControllerTest.testGetAllPromotions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoomPageControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IBE" />
       <extension name="coverage">
         <pattern>
@@ -151,24 +124,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.team14.ibe.tests" />
       <option name="MAIN_CLASS_NAME" value="com.team14.ibe.tests.RoomPageControllerTest" />
-      <option name="METHOD_NAME" value="testGetAllPromotions" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoomPageControllerTest.testGetAllRoomTypes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IBE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.team14.ibe.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.team14.ibe.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.team14.ibe.tests.RoomPageControllerTest" />
-      <option name="METHOD_NAME" value="testGetAllRoomTypes" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -183,6 +139,36 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.team14.ibe.tests" />
       <option name="MAIN_CLASS_NAME" value="com.team14.ibe.tests.RoomPageServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TenantConfigControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IBE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.team14.ibe.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.team14.ibe.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.team14.ibe.tests.TenantConfigControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TenantConfigDTOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IBE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.team14.ibe.dto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.team14.ibe.dto" />
+      <option name="MAIN_CLASS_NAME" value="com.team14.ibe.dto.TenantConfigDTOTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -203,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.IbeApplication" />
-        <item itemvalue="JUnit.IBEApplicationTest" />
+        <item itemvalue="JUnit.TenantConfigDTOTest" />
+        <item itemvalue="JUnit.TenantConfigControllerTest" />
         <item itemvalue="JUnit.RoomPageServiceTest" />
-        <item itemvalue="JUnit.RoomPageControllerTest.testGetAllRoomTypes" />
-        <item itemvalue="JUnit.RoomPageControllerTest.testGetAllPromotions" />
+        <item itemvalue="JUnit.RoomPageControllerTest" />
+        <item itemvalue="JUnit.LandingPageControllerTest" />
       </list>
     </recent_temporary>
   </component>

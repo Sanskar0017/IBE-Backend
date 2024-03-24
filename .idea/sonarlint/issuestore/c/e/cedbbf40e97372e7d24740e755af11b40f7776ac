@@ -1,7 +1,0 @@
-
-~
-java:S14880"bImmediately return this expression instead of assigning it to the temporary variable "configData".(¼ïñ8¼ÕùÖä1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤•õËùÿÿÿÿ8ø­çä1
-M
-java:S1874+"0Remove this use of "download"; it is deprecated.(¸¡Ò–8˜ô˜éä1
-secrets:S6338"ZMake sure this Azure Storage Account Key gets revoked, changed, and removed from the code.(Ö×««ÿÿÿÿÿ8äô˜éä1

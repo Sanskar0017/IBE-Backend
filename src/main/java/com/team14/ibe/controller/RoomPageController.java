@@ -6,7 +6,6 @@ import com.team14.ibe.dto.response.RoomRateDTO;
 import com.team14.ibe.dto.response.RoomResponseDTO;
 import com.team14.ibe.mapper.RoomDataMapper;
 import com.team14.ibe.service.RoomPageService;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -24,11 +23,21 @@ public class RoomPageController {
         this.roomPageService = roomPageService;
     }
 
+
     @GetMapping("/room-types")
-    public ResponseEntity<List<RoomResponseDTO>> getAllRoomTypes(@RequestParam(defaultValue = "1") int page, @RequestParam(defaultValue = "3") int size) {
-        List<RoomResponseDTO> roomTypes = roomPageService.getAllRoomTypes(page, size);
+    public ResponseEntity<List<RoomResponseDTO>> getAllRoomTypes(
+            @RequestParam(defaultValue = "1") int page,
+            @RequestParam(defaultValue = "3") int size,
+            @RequestParam(defaultValue = "false") boolean singleBed,
+            @RequestParam(defaultValue = "false") boolean superDeluxe,
+            @RequestParam(defaultValue = "false") boolean familyDeluxe) {
+
+        List<RoomResponseDTO> roomTypes = roomPageService.getAllRoomTypes(page, size, singleBed, superDeluxe, familyDeluxe);
         return new ResponseEntity<>(roomTypes, HttpStatus.OK);
     }
+
+
+
 
     @GetMapping("/promotions")
     public ResponseEntity<List<PromotionResponseDTO>> getAllPromotions(@RequestParam(defaultValue = "1") int page, @RequestParam(defaultValue = "3") int size) {
@@ -57,17 +66,4 @@ public class RoomPageController {
 
         return new ResponseEntity<>(resultMap, HttpStatus.OK);
     }
-//@GetMapping("/room-data")
-//public ResponseEntity<Map<String, Double>> getRoomData(
-//        @RequestParam("startDate") @DateTimeFormat(pattern = "yyyy-MM-dd") String startDate,
-//        @RequestParam("endDate") @DateTimeFormat(pattern = "yyyy-MM-dd") String endDate) {
-//
-//    List<RoomRateDTO> roomRates = roomPageService.getRoomRate();
-//    List<RoomAvailabilityDTO> roomAvailabilities = roomPageService.getRoomAvailability();
-//
-//    RoomDataMapper roomDataMapper = new RoomDataMapper();
-//    Map<String, Double> resultMap = roomDataMapper.mapRoomData(roomRates, roomAvailabilities, startDate, endDate);
-//
-//    return new ResponseEntity<>(resultMap, HttpStatus.OK);
-//}
 }

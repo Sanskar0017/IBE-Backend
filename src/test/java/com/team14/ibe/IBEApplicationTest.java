@@ -1,9 +1,9 @@
 package com.team14.ibe;
 
-import com.team14.ibe.dto.TenantConfigDTOTest;
 import com.team14.ibe.tests.LandingPageControllerTest;
 import com.team14.ibe.tests.RoomPageControllerTest;
 import com.team14.ibe.tests.TenantConfigControllerTest;
+import com.team14.ibe.tests.TenantConfigDTOTest;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -56,5 +56,7 @@ public class IBEApplicationTest {
 		roomPageControllerTest.setUp();
 		roomPageControllerTest.testGetAllRoomTypes();
 		roomPageControllerTest.testGetAllPromotions();
+		roomPageControllerTest.testGetRoomAvailability();
+		roomPageControllerTest.testGetRoomRates();
 	}
 }

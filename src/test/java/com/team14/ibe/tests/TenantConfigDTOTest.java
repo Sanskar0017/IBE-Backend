@@ -1,5 +1,6 @@
-package com.team14.ibe.dto;
+package com.team14.ibe.tests;
 
+import com.team14.ibe.dto.TenantConfigDTO;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

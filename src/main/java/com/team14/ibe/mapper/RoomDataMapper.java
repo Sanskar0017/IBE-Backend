@@ -20,6 +20,7 @@ public class RoomDataMapper {
             String roomType = entry.getKey();
             Map<String, Double> ratesByDate = entry.getValue();
 
+
             double totalRate = 0.0;
             int availableDays = 0;
 
@@ -40,73 +41,31 @@ public class RoomDataMapper {
         return resultMap;
     }
 
-//    private Map<String, Map<String, Double>> combineData(List<RoomRateDTO> roomRates, List<RoomAvailabilityDTO> roomAvailabilities) {
-//        Map<String, Map<String, Double>> combinedData = new HashMap<>();
-//
-//        // Combine room rates by room type and date
-//        for (RoomRateDTO roomRate : roomRates) {
-//            String roomType = roomRate.getRoomTypeName();
-//            String date = roomRate.getDate();
-//            double rate = roomRate.getBasicNightlyRate();
-//
-//            if (!combinedData.containsKey(roomType)) {
-//                combinedData.put(roomType, new HashMap<>());
-//            }
-//            combinedData.get(roomType).put(date, rate);
-//        }
-//
-//        // Combine room availabilities by room type and date
-//        for (RoomAvailabilityDTO roomAvailability : roomAvailabilities) {
-//            String roomType = roomAvailability.getRoomTypeName();
-//            String date = roomAvailability.getDate();
-//
-//            if (!combinedData.containsKey(roomType)) {
-//                combinedData.put(roomType, new HashMap<>());
-//            }
-//            // If the date already exists for this room type, ignore it because we only need rates for available dates
-//            if (!combinedData.get(roomType).containsKey(date)) {
-//                combinedData.get(roomType).put(date, null);
-//            }
-//        }
-//
-//        return combinedData;
-//    }
-private Map<String, Map<String, Double>> combineData(List<RoomRateDTO> roomRates, List<RoomAvailabilityDTO> roomAvailabilities) {
-    Map<String, Map<String, Double>> combinedData = new HashMap<>();
+    private Map<String, Map<String, Double>> combineData(List<RoomRateDTO> roomRates, List<RoomAvailabilityDTO> roomAvailabilities) {
+        Map<String, Map<String, Double>> combinedData = new HashMap<>();
 
-    // Combine room rates by room type and date
-    for (RoomRateDTO roomRate : roomRates) {
-        String roomType = roomRate.getRoomTypeName();
-        String date = roomRate.getDate();
-        double rate = roomRate.getBasicNightlyRate();
+        // Combine room rates by room type and date
+        for (RoomRateDTO roomRate : roomRates) {
+            String roomType = roomRate.getRoomTypeName();
+            String date = roomRate.getDate();
+            double rate = roomRate.getBasicNightlyRate();
 
-        if (!combinedData.containsKey(roomType)) {
-            combinedData.put(roomType, new HashMap<>());
+            if (!combinedData.containsKey(roomType)) {
+                combinedData.put(roomType, new HashMap<>());
+            }
+            combinedData.get(roomType).put(date, rate);
         }
-        combinedData.get(roomType).put(date, rate);
-    }
 
-    // Combine room availabilities by room type and date
-    for (RoomAvailabilityDTO roomAvailability : roomAvailabilities) {
-        int roomId = roomAvailability.getRoomId();
-        String date = roomAvailability.getDate();
+        for (RoomAvailabilityDTO roomAvailability : roomAvailabilities) {
+            String roomType = roomAvailability.getRoomTypeName();
+            String date = roomAvailability.getDate();
 
-        // Check if the room ID is available for the given date
-        for (Map.Entry<String, Map<String, Double>> entry : combinedData.entrySet()) {
-            String roomType = entry.getKey();
-            Map<String, Double> ratesByDate = entry.getValue();
-
-            if (ratesByDate.containsKey(date)) {
-                if (!combinedData.containsKey(roomType)) {
-                    combinedData.put(roomType, new HashMap<>());
-                }
-                combinedData.get(roomType).put(date, null);
+            if (!combinedData.containsKey(roomType)) {
+                combinedData.put(roomType, new HashMap<>());
             }
         }
+        return combinedData;
     }
-
-    return combinedData;
-}
 
 }
 

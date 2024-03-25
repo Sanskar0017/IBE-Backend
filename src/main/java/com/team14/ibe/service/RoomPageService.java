@@ -25,18 +25,45 @@ public class RoomPageService {
 
     private final RestTemplate restTemplate = new RestTemplate();
 
-    public List<RoomResponseDTO> getAllRoomTypes(int page, int size) {
+    public List<RoomResponseDTO> getAllRoomTypes(int page, int size, boolean singleBeds, boolean superDeluxe, boolean familyDeluxe) {
         int skip = (page - 1) * size;
 
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
         httpHeaders.set("x-api-key", apiKey);
 
-        String requestBody = String.format("{ \"query\": \"{ listRoomTypes(where: {property_id: {equals: 14}}, take: %d, skip: %d) { room_type_id room_type_name area_in_square_feet single_bed double_bed max_capacity } }\" }", size, skip);
-        HttpEntity<String> requestEntity = new HttpEntity<>(requestBody, httpHeaders);
+        StringBuilder queryBuilder = new StringBuilder("{ \"query\": \"{ listRoomTypes(where: { property_id: { equals: 14 }");
+
+        if (singleBeds) {
+            queryBuilder.append(", single_bed: { gt: 0 }");
+        }
+
+        if (familyDeluxe || superDeluxe) {
+            queryBuilder.append(", OR: [");
+            if (familyDeluxe) {
+                queryBuilder.append("{ room_type_name: { equals: \\\"FAMILY_DELUXE\\\" } }");
+                if (superDeluxe) {
+                    queryBuilder.append(",");
+                }
+            }
+            if (superDeluxe) {
+                queryBuilder.append("{ room_type_name: { equals: \\\"SUPER_DELUXE\\\" } }");
+            }
+            queryBuilder.append("]");
+        }
+
+        queryBuilder.append(" }, take: ").append(size).append(", skip: ").append(skip)
+                .append(") { room_type_id room_type_name area_in_square_feet single_bed double_bed max_capacity } }\\\" }\" }");
+
+        HttpEntity<String> requestEntity = new HttpEntity<>(queryBuilder.toString(), httpHeaders);
+
+
 
         ResponseEntity<String> responseEntity = restTemplate.exchange(graphqlEndpoint, HttpMethod.POST, requestEntity, String.class);
         String responseBody = responseEntity.getBody();
+
+
+
         List<RoomResponseDTO> roomTypes = new ArrayList<>();
         ObjectMapper objectMapper = new ObjectMapper();
         try {
@@ -54,6 +81,7 @@ public class RoomPageService {
                     roomTypes.add(roomResponseDTO);
                 }
             }
+
         } catch (Exception e) {
             e.printStackTrace();
         }

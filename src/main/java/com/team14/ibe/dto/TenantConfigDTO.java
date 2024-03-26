@@ -12,4 +12,6 @@ public class TenantConfigDTO {
     private int maxGuestCount;
     private Integer[] roomCountOptions;
     private int maxRooms;
+    
+    // add filter dto in this
 }

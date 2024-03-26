@@ -25,134 +25,35 @@ public class RoomPageService {
 
     private final RestTemplate restTemplate = new RestTemplate();
 
-    public List<RoomResponseDTO> getAllRoomTypes(int page, int size) {
+    public List<RoomResponseDTO> getAllRoomTypes(int page, int size, boolean singleBeds, boolean superDeluxe, boolean familyDeluxe) {
         int skip = (page - 1) * size;
-
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
         httpHeaders.set("x-api-key", apiKey);
 
-//        String requestBody = String.format("{ \"query\": \"{ listRoomTypes(where: {property_id: {equals: 14}}, take: %d, skip: %d) { room_type_id room_type_name area_in_square_feet single_bed double_bed max_capacity } }\" }", size, skip);
-       // showing only rooms with single beds > 0
-//        String requestBody = String.format("{ \"query\": \"{ listRoomTypes(where: { property_id: { equals: 14 }, AND: { single_bed: { gt: 0 } } }, take: %d, skip: %d) { room_type_id room_type_name area_in_square_feet single_bed double_bed max_capacity } }\" }", size, skip);
-
-        // changing query according to single bed
-//        boolean single_Bed = true;
-//        String singleBedFilter = single_Bed ? ", single_bed: {greaterThan: 0}" : ""; // Conditionally add singleBed filter
-//        String requestBody = String.format("{ \"query\": \"{ listRoomTypes(where: {property_id: {equals: 14}%s}, take: %d, skip: %d) { room_type_id room_type_name area_in_square_feet single_bed double_bed max_capacity } }\" }", singleBedFilter, size, skip);
-        // end of query
-
-//        HttpEntity<String> requestEntity = new HttpEntity<>(requestBody, httpHeaders);
-
-        // using queryBuilder
-
-
-//        StringBuilder queryBuilder = new StringBuilder("{ \"query\": \"{ listRoomTypes(where: { property_id: { equals: 14 }");
-//
-//// Conditionally add single_bed filter
-//        boolean includeSingleBed = true;
-//        boolean includeSuperDeluxe = false;
-//        boolean includeFamilyDeluxe = false;
-//
-//        if (includeSingleBed) {
-//            queryBuilder.append(", single_bed: { gt: 0 }");
-//        }
-//
-//// Adding room_type filter if either includeSuperDeluxe or includeFamilyDeluxe is true
-//        if (includeSuperDeluxe || includeFamilyDeluxe) {
-//            queryBuilder.append(", room_type: { in: [");
-//            if (includeSuperDeluxe) {
-//                queryBuilder.append("\"SUPER_DELUXE\"");
-//                if (includeFamilyDeluxe) {
-//                    queryBuilder.append(",");
-//                }
-//            }
-//            if (includeFamilyDeluxe) {
-//                queryBuilder.append("\"FAMILY_DELUXE\"");
-//            }
-//            queryBuilder.append("] }");
-//        }
-//
-//// Completing the query with pagination and fields
-//        queryBuilder.append(" }, take: ").append(size).append(", skip: ").append(skip)
-//                .append(") { room_type_id room_type_name area_in_square_feet single_bed double_bed max_capacity } }\" }");
-//
-//// Sending the GraphQL request
-//        HttpEntity<String> requestEntity = new HttpEntity<>(queryBuilder.toString(), httpHeaders);
-//        System.out.println(queryBuilder.toString());
-
-
-
-//        StringBuilder queryBuilder = new StringBuilder("{ \"query\": \"{ listRoomTypes(where: { property_id: { equals: 14 }");
-//
-//// Conditionally add single_bed filter
-//        boolean includeSingleBed = true;
-//        boolean includeSuperDeluxe = false;
-//        boolean includeFamilyDeluxe = true;
-//
-//        if (includeSingleBed) {
-//            queryBuilder.append(", single_bed: { gt: 0 }");
-//        }
-//
-//// Adding room_type filter if includeFamilyDeluxe is true
-//        if (includeFamilyDeluxe) {
-//            queryBuilder.append(", room_type_name: { equals: \\\"FAMILY_DELUXE\\\" }");
-//        }
-//
-//// Completing the query with pagination and fields
-//        queryBuilder.append(" }, take: ").append(size).append(", skip: ").append(skip)
-//                .append(") { room_type_id room_type_name area_in_square_feet single_bed double_bed max_capacity } }\" }");
-//
-//// Sending the GraphQL request
-//        HttpEntity<String> requestEntity = new HttpEntity<>(queryBuilder.toString(), httpHeaders);
-//        System.out.println(queryBuilder.toString());
-
-
         StringBuilder queryBuilder = new StringBuilder("{ \"query\": \"{ listRoomTypes(where: { property_id: { equals: 14 }");
-
-// Conditionally add single_bed filter
-        boolean includeSingleBed = false;
-        boolean includeSuperDeluxe = true;
-        boolean includeFamilyDeluxe = true;
-
-        if (includeSingleBed) {
+        if (singleBeds) {
             queryBuilder.append(", single_bed: { gt: 0 }");
         }
 
-        if (includeFamilyDeluxe || includeSuperDeluxe) {
+        if (familyDeluxe || superDeluxe) {
             queryBuilder.append(", OR: [");
-            if (includeFamilyDeluxe) {
+            if (familyDeluxe) {
                 queryBuilder.append("{ room_type_name: { equals: \\\"FAMILY_DELUXE\\\" } }");
-                if (includeSuperDeluxe) {
+                if (superDeluxe) {
                     queryBuilder.append(",");
                 }
             }
-            if (includeSuperDeluxe) {
+            if (superDeluxe) {
                 queryBuilder.append("{ room_type_name: { equals: \\\"SUPER_DELUXE\\\" } }");
             }
             queryBuilder.append("]");
         }
 
-        queryBuilder.append(" }, take: ").append(size).append(", skip: ").append(skip)
-                .append(") { room_type_id room_type_name area_in_square_feet single_bed double_bed max_capacity } }\\\" }\" }");
-
-// Sending the GraphQL request
+        queryBuilder.append(" }, take: ").append(size).append(", skip: ").append(skip).append(") { room_type_id room_type_name area_in_square_feet single_bed double_bed max_capacity } }\\\" }\" }");
         HttpEntity<String> requestEntity = new HttpEntity<>(queryBuilder.toString(), httpHeaders);
-        System.out.println(queryBuilder.toString());
-
-
-
-
-
-        // end
-
-
         ResponseEntity<String> responseEntity = restTemplate.exchange(graphqlEndpoint, HttpMethod.POST, requestEntity, String.class);
         String responseBody = responseEntity.getBody();
-
-
-        System.out.println("getAllRoomTYpe response is: " + responseBody);
-
 
         List<RoomResponseDTO> roomTypes = new ArrayList<>();
         ObjectMapper objectMapper = new ObjectMapper();

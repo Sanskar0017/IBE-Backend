@@ -47,3 +47,5 @@ c
 3src/main/java/com/team14/ibe/config/CorsConfig.java,a/1/a155b73089826c8aa62747f7c16fdb35eaf7623f
 l
 <src/main/java/com/team14/ibe/service/LandingPageService.java,e/5/e56e575b2840d1560a734ef2b0b0003e3ed98bff
+_
+/src/main/java/com/team14/ibe/dto/FilterDTO.java,9/f/9fff56346496e013f1bb1b38945841834e932e30

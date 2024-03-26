@@ -1,22 +1,5 @@
 
-r
-java:S1192¥"ODefine a constant instead of duplicating this literal "room_type_name" 3 times.(ìÎçÞýÿÿÿÿ8¹²£õæ1
+q
+java:S1192B"ODefine a constant instead of duplicating this literal "room_type_name" 3 times.(ìÎçÞýÿÿÿÿ8·í¡úæ1
 l
-java:S1192!"JDefine a constant instead of duplicating this literal "x-api-key" 4 times.(¿Ð¾æýÿÿÿÿ8º²£õæ1
-Z
-java:S2589‚"7Remove this expression which always evaluates to "true"(â÷Æ¹øÿÿÿÿ8Àâý÷æ1
-T
-java:S2589z"7Remove this expression which always evaluates to "true"(¥Â¥é8ÖÏƒøæ1
-Y
-java:S2589~"7Remove this expression which always evaluates to "true"(â÷Æ¹øÿÿÿÿ8¿âý÷æ1
-T
-java:S2589|"7Remove this expression which always evaluates to "true"(¼€¹Ç8Àâý÷æ1
-a
-java:S2583v"DChange this condition so that it does not always evaluate to "false"(þÎÚ„8é¶„øæ1
-]	java:S125#"<This block of commented-out lines of code should be removed.(¡Øôÿùÿÿÿÿ8ÔÛÜõæ1
-X	java:S125("<This block of commented-out lines of code should be removed.(ê±ÓŽ8žƒ¨õæ1
-]	java:S125-"<This block of commented-out lines of code should be removed.(¹†ªýÿÿÿÿ8ÞÂÿöæ1
-]	java:S1252"<This block of commented-out lines of code should be removed.(–‚î¯øÿÿÿÿ8ÿ®Ç÷æ1
-]	java:S125V"<This block of commented-out lines of code should be removed.(–‚î¯øÿÿÿÿ8úÆÝ÷æ1
-H	java:S106"+Replace this use of System.out by a logger.(Ëº«î8±è÷æ1
-H	java:S106š"+Replace this use of System.out by a logger.(Ë™Šç8Íâý÷æ1
+java:S1192 "JDefine a constant instead of duplicating this literal "x-api-key" 4 times.(¿Ð¾æýÿÿÿÿ8¸í¡úæ1

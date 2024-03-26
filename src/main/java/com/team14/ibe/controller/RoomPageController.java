@@ -22,17 +22,37 @@ public class RoomPageController {
     public RoomPageController(RoomPageService roomPageService) {
         this.roomPageService = roomPageService;
     }
+//
+//    @GetMapping("/room-types")
+//    public ResponseEntity<List<RoomResponseDTO>> getAllRoomTypes(@RequestParam(defaultValue = "1") int page, @RequestParam(defaultValue = "3") int size) {
+//        System.out.println("page: " + page);
+//        System.out.println("size: " + size);
+//        List<RoomResponseDTO> roomTypes = roomPageService.getAllRoomTypes(page, size);
+//        return new ResponseEntity<>(roomTypes, HttpStatus.OK);
+//    }
 
     @GetMapping("/room-types")
-    public ResponseEntity<List<RoomResponseDTO>> getAllRoomTypes(@RequestParam(defaultValue = "1") int page, @RequestParam(defaultValue = "3") int size) {
+    public ResponseEntity<List<RoomResponseDTO>> getAllRoomTypes(
+            @RequestParam(defaultValue = "1") int page,
+            @RequestParam(defaultValue = "3") int size,
+            @RequestParam(defaultValue = "false") boolean singleBed,
+            @RequestParam(defaultValue = "false") boolean superDeluxe,
+            @RequestParam(defaultValue = "false") boolean familyDeluxe) {
         System.out.println("page: " + page);
         System.out.println("size: " + size);
-        List<RoomResponseDTO> roomTypes = roomPageService.getAllRoomTypes(page, size);
+        System.out.println("singleBed: " + singleBed);
+        System.out.println("superDeluxe: " + superDeluxe);
+        System.out.println("familyDeluxe: " + familyDeluxe);
+
+        List<RoomResponseDTO> roomTypes = roomPageService.getAllRoomTypes(page, size, singleBed, superDeluxe, familyDeluxe);
         return new ResponseEntity<>(roomTypes, HttpStatus.OK);
     }
 
+
+
+
     @GetMapping("/promotions")
-    public ResponseEntity<List<PromotionResponseDTO>> getAllPromotions(@RequestParam(defaultValue = "1") int page, @RequestParam(defaultValue = "3") int size) {
+    public ResponseEntity<List<PromotionResponseDTO>> getAllPromotions(@RequestParam(defaultValue = "1") int page, @RequestParam(defaultValue = "6") int size) {
         List<PromotionResponseDTO> promotions = roomPageService.getAllPromotions(page, size);
         return new ResponseEntity<>(promotions, HttpStatus.OK);
     }
@@ -48,6 +68,17 @@ public class RoomPageController {
         List<RoomRateDTO> roomRates = roomPageService.getRoomRate();
         return new ResponseEntity<>(roomRates, HttpStatus.OK);
     }
+//    @GetMapping("/room-data")
+//    public ResponseEntity<Map<String, Double>> getRoomData() {
+//        List<RoomRateDTO> roomRates = roomPageService.getRoomRate();
+//        List<RoomAvailabilityDTO> roomAvailabilities = roomPageService.getRoomAvailability();
+//
+//        RoomDataMapper roomDataMapper = new RoomDataMapper();
+//        Map<String, Double> resultMap = roomDataMapper.mapRoomData(roomRates, roomAvailabilities);
+//
+//        return new ResponseEntity<>(resultMap, HttpStatus.OK);
+//    }
+
     @GetMapping("/room-data")
     public ResponseEntity<Map<String, Double>> getRoomData() {
         List<RoomRateDTO> roomRates = roomPageService.getRoomRate();

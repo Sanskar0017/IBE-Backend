@@ -16,11 +16,12 @@ public class CorsConfig implements WebMvcConfigurer {
 //                .allowedOrigins("*")
                 .allowedOrigins(
 //                        "https://white-dune-044f84310.4.azurestaticapps.net",
-                        "http://localhost:5175/"
+//                        "http://localhost:5174/*"
+                        "*"
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*")
-                .allowCredentials(true)
+//                .allowCredentials(true)
                 .maxAge(3600);
     }
 }

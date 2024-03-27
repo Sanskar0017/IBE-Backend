@@ -1,7 +1,7 @@
 package com.team14.ibe.service;
 
 
-import com.team14.ibe.modals.TenantConfig;
+import com.team14.ibe.models.TenantConfig;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;

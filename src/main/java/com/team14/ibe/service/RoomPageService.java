@@ -6,6 +6,7 @@ import com.team14.ibe.dto.response.PromotionResponseDTO;
 import com.team14.ibe.dto.response.RoomAvailabilityDTO;
 import com.team14.ibe.dto.response.RoomRateDTO;
 import com.team14.ibe.dto.response.RoomResponseDTO;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
@@ -15,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@Slf4j
 public class RoomPageService {
 
     @Value("${api.key}")
@@ -57,11 +59,8 @@ public class RoomPageService {
 
         HttpEntity<String> requestEntity = new HttpEntity<>(queryBuilder.toString(), httpHeaders);
 
-
-
         ResponseEntity<String> responseEntity = restTemplate.exchange(graphqlEndpoint, HttpMethod.POST, requestEntity, String.class);
         String responseBody = responseEntity.getBody();
-
 
 
         List<RoomResponseDTO> roomTypes = new ArrayList<>();
@@ -88,15 +87,69 @@ public class RoomPageService {
         return roomTypes;
     }
 
-    public List<PromotionResponseDTO> getAllPromotions(int page, int size) {
+    public List<PromotionResponseDTO> getAllPromotions(int page, int size, boolean seniorCitizen, boolean kduMembership, boolean longWeekendDiscount, boolean militaryPersonnelDiscount, boolean upfrontPaymentDiscount, boolean weekendDiscount) {
+        log.info("service promotions 1");
         int skip = (page - 1) * size;
 
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
         httpHeaders.set("x-api-key", apiKey);
 
-        String requestBody = String.format("{ \"query\": \"{ listPromotions(where: {}, take: %d, skip: %d) { promotion_id promotion_title promotion_description minimum_days_of_stay is_deactivated price_factor } }\" }", size, skip);
-        HttpEntity<String> requestEntity = new HttpEntity<>(requestBody, httpHeaders);
+        StringBuilder queryBuilder = new StringBuilder("{ \"query\": \"{ listPromotions(where: {");
+
+        boolean isFirstCondition = true;
+        queryBuilder.append(" OR: [");
+
+        if (seniorCitizen) {
+            queryBuilder.append(" { promotion_title: { equals: \\\"SENIOR_CITIZEN_DISCOUNT\\\" } }");
+            isFirstCondition = false;
+        }
+
+        if (kduMembership) {
+            if (!isFirstCondition) {
+                queryBuilder.append(", ");
+            }
+            queryBuilder.append(" { promotion_title: { equals: \\\"KDU Membership Discount\\\" } }");
+            isFirstCondition = false;
+        }
+
+        if (longWeekendDiscount) {
+            if (!isFirstCondition) {
+                queryBuilder.append(", ");
+            }
+            queryBuilder.append(" { promotion_title: { equals: \\\"Long weekend discount\\\" } }");
+            isFirstCondition = false;
+        }
+
+        if (militaryPersonnelDiscount) {
+            if (!isFirstCondition) {
+                queryBuilder.append(", ");
+            }
+            queryBuilder.append(" { promotion_title: { equals: \\\"Military personnel discount\\\" } }");
+            isFirstCondition = false;
+        }
+
+        if (upfrontPaymentDiscount) {
+            if (!isFirstCondition) {
+                queryBuilder.append(", ");
+            }
+            queryBuilder.append(" { promotion_title: { equals: \\\"Upfront payment discount\\\" } }");
+            isFirstCondition = false;
+        }
+
+        if (weekendDiscount) {
+            if (!isFirstCondition) {
+                queryBuilder.append(", ");
+            }
+            queryBuilder.append(" { promotion_title: { equals: \\\"Weekend discount\\\" } }");
+        }
+
+        queryBuilder.append(" ] }");
+
+        queryBuilder.append(", take: ").append(size).append(", skip: ").append(skip)
+                .append(") { promotion_id promotion_title promotion_description minimum_days_of_stay is_deactivated price_factor } }\" }");
+
+        HttpEntity<String> requestEntity = new HttpEntity<>(queryBuilder.toString(), httpHeaders);
 
         ResponseEntity<String> responseEntity = restTemplate.exchange(graphqlEndpoint, HttpMethod.POST, requestEntity, String.class);
         String responseBody = responseEntity.getBody();

@@ -1,1 +1,6 @@
-/home/lenovo/IBE-Backend/src/test/java/com/team14/IBE/IbeApplicationTests.java
+/home/lenovo/sprint 3/finalissbar/clone/gitafterdeploychanges/sprint 4/IBE-Backend/src/test/java/com/team14/ibe/tests/RoomPageControllerTest.java
+/home/lenovo/sprint 3/finalissbar/clone/gitafterdeploychanges/sprint 4/IBE-Backend/src/test/java/com/team14/ibe/tests/TenantConfigControllerTest.java
+/home/lenovo/sprint 3/finalissbar/clone/gitafterdeploychanges/sprint 4/IBE-Backend/src/test/java/com/team14/ibe/tests/RoomPageServiceTest.java
+/home/lenovo/sprint 3/finalissbar/clone/gitafterdeploychanges/sprint 4/IBE-Backend/src/test/java/com/team14/ibe/IBEApplicationTest.java
+/home/lenovo/sprint 3/finalissbar/clone/gitafterdeploychanges/sprint 4/IBE-Backend/src/test/java/com/team14/ibe/tests/LandingPageControllerTest.java
+/home/lenovo/sprint 3/finalissbar/clone/gitafterdeploychanges/sprint 4/IBE-Backend/src/test/java/com/team14/ibe/tests/TenantConfigDTOTest.java

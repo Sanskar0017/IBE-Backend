@@ -59,11 +59,8 @@ public class RoomPageService {
 
         HttpEntity<String> requestEntity = new HttpEntity<>(queryBuilder.toString(), httpHeaders);
 
-
-
         ResponseEntity<String> responseEntity = restTemplate.exchange(graphqlEndpoint, HttpMethod.POST, requestEntity, String.class);
         String responseBody = responseEntity.getBody();
-
 
 
         List<RoomResponseDTO> roomTypes = new ArrayList<>();

@@ -115,9 +115,9 @@ public class RoomPageControllerTest {
     @Test
     public void testGetAllPromotions() {
         List<PromotionResponseDTO> promotions = new ArrayList<>();
-        when(roomPageService.getAllPromotions(1, 3)).thenReturn(promotions);
-        ResponseEntity<List<PromotionResponseDTO>> response = roomPageController.getAllPromotions(1, 3);
-        verify(roomPageService, times(1)).getAllPromotions(1, 3);
+        when(roomPageService.getAllPromotions(1, 3, true, true, false, false, false, false)).thenReturn(promotions);
+        ResponseEntity<List<PromotionResponseDTO>> response = roomPageController.getAllPromotions(1, 3, true, true, false, false, false, false);
+        verify(roomPageService, times(1)).getAllPromotions(1, 3, true, true, false, false, false, false);
         assertEquals(HttpStatus.OK, response.getStatusCode());
     }
 

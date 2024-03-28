@@ -1,3 +1,4 @@
+com/team14/ibe/dto/PromoCodeDTO.class
 com/team14/ibe/service/LandingPageService.class
 com/team14/ibe/controller/LandingPageController.class
 com/team14/ibe/models/PromoCode.class
@@ -19,6 +20,7 @@ com/team14/ibe/testController/GraphQLController.class
 com/team14/ibe/service/GraphQLTestingService.class
 com/team14/ibe/dto/response/RoomAvailabilityDTO.class
 com/team14/ibe/mapper/TenantConfigMapper$1.class
+com/team14/ibe/config/CorsConfig.class
 com/team14/ibe/dto/FilterDTO.class
 com/team14/ibe/dto/response/RoomResponseDTO.class
 com/team14/ibe/service/RoomPageService.class

@@ -1,5 +1,6 @@
 package com.team14.ibe.service;
 
+import com.team14.ibe.dto.PromoCodeDTO;
 import com.team14.ibe.dto.response.PromoCodeResponseDTO;
 import com.team14.ibe.models.PromoCode;
 import com.team14.ibe.repository.PromoCodeRepository;
@@ -26,5 +27,13 @@ public class RoomModalPageService {
             return promoCodeResponseDTO;
         }
         return new PromoCodeResponseDTO(false, "", 0);
+    }
+
+
+    public void insertPromoCode(PromoCodeDTO promoCodeDTO) {
+        PromoCode promoCode = new PromoCode();
+        promoCode.setPromoCode(promoCodeDTO.getPromoCode());
+        promoCode.setDiscount(promoCodeDTO.getDiscount());
+        promoCodeRepository.save(promoCode);
     }
 }

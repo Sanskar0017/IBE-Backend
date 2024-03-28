@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0fdec5-fe63-4902-b3be-e70fac69374a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6aa2e99b4afd365338df7d326e162ae45785154b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6aa2e99b4afd365338df7d326e162ae45785154b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fd3aa62ce1bf2de21d1ff54d3edafbe4a5e5a2e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fd3aa62ce1bf2de21d1ff54d3edafbe4a5e5a2e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4c774e16a6057d3e386d6fb238cdd17adc74488" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4c774e16a6057d3e386d6fb238cdd17adc74488" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f538b7143f32785c2048dce511e474239cdd59aa" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f538b7143f32785c2048dce511e474239cdd59aa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/config/CorsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/models/PromoCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/models/PromoCode.class" afterDir="false" />
-    </list>
+    <list default="true" id="cf0fdec5-fe63-4902-b3be-e70fac69374a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

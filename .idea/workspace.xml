@@ -4,39 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0fdec5-fe63-4902-b3be-e70fac69374a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/0362a6c3c056bdb1fd37fe25f83f9de73710d898" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/0362a6c3c056bdb1fd37fe25f83f9de73710d898" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f1528ae919b50c4ba7d04a80cf8fe6ce6a80b11" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f1528ae919b50c4ba7d04a80cf8fe6ce6a80b11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6aa2e99b4afd365338df7d326e162ae45785154b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6aa2e99b4afd365338df7d326e162ae45785154b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fd3aa62ce1bf2de21d1ff54d3edafbe4a5e5a2e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fd3aa62ce1bf2de21d1ff54d3edafbe4a5e5a2e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a155b73089826c8aa62747f7c16fdb35eaf7623f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a155b73089826c8aa62747f7c16fdb35eaf7623f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4c774e16a6057d3e386d6fb238cdd17adc74488" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4c774e16a6057d3e386d6fb238cdd17adc74488" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b85dddef361c5d66a297821e4fd2831ecb540d57" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b85dddef361c5d66a297821e4fd2831ecb540d57" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e334e4dbb615d7ada21d7323b8120fe7e0254498" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e334e4dbb615d7ada21d7323b8120fe7e0254498" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f538b7143f32785c2048dce511e474239cdd59aa" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f538b7143f32785c2048dce511e474239cdd59aa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/config/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/LandingPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/LandingPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/RoomModalPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/RoomModalPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/RoomPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/RoomPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/TenantConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/TenantConfigController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/RoomModalPageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/RoomModalPageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/IBEApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/IBEApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/LandingPageControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/LandingPageControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/RoomPageControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/RoomPageControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/TenantConfigControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/TenantConfigControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/TenantConfigDTOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/TenantConfigDTOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/LandingPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/LandingPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/RoomModalPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/RoomModalPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/RoomPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/RoomPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/TenantConfigController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/TenantConfigController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/RoomModalPageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/RoomModalPageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/IBEApplicationTest.class" beforeDir="false" />
-    </list>
+    <list default="true" id="cf0fdec5-fe63-4902-b3be-e70fac69374a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

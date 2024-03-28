@@ -65,3 +65,10 @@ e
 5src/main/java/com/team14/ibe/models/TenantConfig.java,5/e/5e5695a03668e07d26538f71dc7384c7e516815f
 b
 2src/main/java/com/team14/ibe/dto/PromoCodeDTO.java,8/1/8133e751ff0366c3fbada3aa132fe8d4c573b021
+7
+HELP.md,1/a/1a273f73b7a477b0745593641bd708a6182c7ad5
+8
+mvnw.cmd,1/f/1f1763f358c257ea3515417352b82b0165647ad1
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302

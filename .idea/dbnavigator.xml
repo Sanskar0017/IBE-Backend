@@ -30,14 +30,15 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="2b4985d6-fe8e-4a3e-8918-bec3c7a89a81" object-ref="consoles/Connection 2" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="2e5b13f2-9853-45d8-8cd1-69480c2507a9" />
     <connection id="627dc434-8db9-4520-94ed-bd221a07a65b" />
     <connection id="2b4985d6-fe8e-4a3e-8918-bec3c7a89a81" />
+  </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />

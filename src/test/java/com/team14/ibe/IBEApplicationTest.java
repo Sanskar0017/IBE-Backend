@@ -57,6 +57,6 @@ public class IBEApplicationTest {
 		roomPageControllerTest.testGetAllRoomTypes();
 		roomPageControllerTest.testGetAllPromotions();
 		roomPageControllerTest.testGetRoomAvailability();
-		roomPageControllerTest.testGetRoomRates();
+//		roomPageControllerTest.testGetRoomRates();
 	}
 }

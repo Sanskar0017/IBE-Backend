@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0fdec5-fe63-4902-b3be-e70fac69374a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fd3aa62ce1bf2de21d1ff54d3edafbe4a5e5a2e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fd3aa62ce1bf2de21d1ff54d3edafbe4a5e5a2e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4c774e16a6057d3e386d6fb238cdd17adc74488" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4c774e16a6057d3e386d6fb238cdd17adc74488" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b85dddef361c5d66a297821e4fd2831ecb540d57" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b85dddef361c5d66a297821e4fd2831ecb540d57" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e334e4dbb615d7ada21d7323b8120fe7e0254498" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e334e4dbb615d7ada21d7323b8120fe7e0254498" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f538b7143f32785c2048dce511e474239cdd59aa" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f538b7143f32785c2048dce511e474239cdd59aa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/IBEApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/IBEApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/LandingPageControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/LandingPageControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/RoomPageControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/RoomPageControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/TenantConfigControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/TenantConfigControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/TenantConfigDTOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/TenantConfigDTOTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

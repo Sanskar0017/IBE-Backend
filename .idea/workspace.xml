@@ -4,23 +4,85 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8439f998-af17-48df-b668-3ed063207154" name="Changes" comment="">
+    <list default="true" id="cf0fdec5-fe63-4902-b3be-e70fac69374a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f8e591a3a65a281a37b3de2c2c28fedb32689c1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/479534e0fc3afcdae5710cab6dd6f0a94f3c9bfc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/8133e751ff0366c3fbada3aa132fe8d4c573b021" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fd3aa62ce1bf2de21d1ff54d3edafbe4a5e5a2e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fff56346496e013f1bb1b38945841834e932e30" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a224bd80e72f72e306aa34d62855d34d3d722bfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b85dddef361c5d66a297821e4fd2831ecb540d57" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b899e8407236bbd327de87ffbc6c726b9562f78b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1d35b8769cd96d9ea1043515d7a8f4058a04cb8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e334e4dbb615d7ada21d7323b8120fe7e0254498" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f538b7143f32785c2048dce511e474239cdd59aa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/d/fdd237f2a3bf9457cd99ec5316cede8ba0958577" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/f/1f8e591a3a65a281a37b3de2c2c28fedb32689c1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/7/479534e0fc3afcdae5710cab6dd6f0a94f3c9bfc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/1/8133e751ff0366c3fbada3aa132fe8d4c573b021" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/f/9fd3aa62ce1bf2de21d1ff54d3edafbe4a5e5a2e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/f/9fff56346496e013f1bb1b38945841834e932e30" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/2/a224bd80e72f72e306aa34d62855d34d3d722bfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/8/b85dddef361c5d66a297821e4fd2831ecb540d57" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/8/b899e8407236bbd327de87ffbc6c726b9562f78b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/1/c1d35b8769cd96d9ea1043515d7a8f4058a04cb8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/3/e334e4dbb615d7ada21d7323b8120fe7e0254498" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/5/f538b7143f32785c2048dce511e474239cdd59aa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/d/fdd237f2a3bf9457cd99ec5316cede8ba0958577" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f1528ae919b50c4ba7d04a80cf8fe6ce6a80b11" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f1528ae919b50c4ba7d04a80cf8fe6ce6a80b11" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/521fa934341cdccc69aff5d0717a40f0ead80b7f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/521fa934341cdccc69aff5d0717a40f0ead80b7f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6aa2e99b4afd365338df7d326e162ae45785154b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6aa2e99b4afd365338df7d326e162ae45785154b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c066e961ac1bea46e4dff680554c30e6940ce3a6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c066e961ac1bea46e4dff680554c30e6940ce3a6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IBE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IBE.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/IbeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/IbeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/LandingPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/LandingPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/RoomModalPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/RoomModalPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/RoomPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/RoomPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/TenantConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/TenantConfigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/mapper/RoomDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/mapper/RoomDataMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/mapper/TenantConfigMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/mapper/TenantConfigMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/models/PromoCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/models/PromoCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/models/TenantConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/models/TenantConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/GraphQLTestingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/GraphQLTestingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/LandingPageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/LandingPageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/RoomModalPageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/RoomModalPageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/RoomPageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/RoomPageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IBE-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/IBE-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IBE-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/IBE-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/config/CorsConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/TenantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/TenantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/testController/GraphQLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/testController/GraphQLController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/IbeApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/IbeApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/LandingPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/LandingPageController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/RoomModalPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/RoomModalPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/RoomPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/RoomPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/TenantConfigController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/TenantConfigController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/mapper/RoomDataMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/mapper/RoomDataMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/mapper/TenantConfigMapper$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/mapper/TenantConfigMapper$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/mapper/TenantConfigMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/mapper/TenantConfigMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/models/PromoCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/models/PromoCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/models/TenantConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/models/TenantConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/models/TenantConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/models/TenantConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/GraphQLTestingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/GraphQLTestingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/LandingPageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/LandingPageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/RoomModalPageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/RoomModalPageService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/RoomPageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/RoomPageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/TenantService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/TenantService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/testController/GraphQLController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/testController/GraphQLController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,10 +90,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
-  <component name="ProjectId" id="2eKCVRB1fbBgIhYYuQXCeaLAvmr" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2eDcYgvH8Gb8x6RmoOJ5mEuWV3r" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,22 +102,25 @@
   "keyToString": {
     "Application.IbeApplication.executor": "Run",
     "IBE.wasFacetEverAdded": "true",
+    "JUnit.RoomPageControllerTest.testGetAllPromotions.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "PTN-54",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/lenovo/sprint 3/finalissbar/clone/gitafterdeploychanges/sprint 4/IBE-Backend",
+    "last_opened_file_path": "/home/lenovo/testingDB/demo",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "template.copyright.formatting"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.IbeApplication">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
       <option name="appServicePlanResourceGroup" />
-      <option name="appSettingsKey" value="9618c885-e429-4aa1-8f3a-6ddd3e977a42" />
+      <option name="appSettingsKey" value="881e275d-8031-4386-a60e-5e88ecc8d79b" />
       <option name="artifact" />
       <option name="debugOptions" />
       <option name="deployment" />
@@ -94,9 +159,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RoomPageControllerTest.testGetAllPromotions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IBE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.team14.ibe.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.team14.ibe.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.team14.ibe.tests.RoomPageControllerTest" />
+      <option name="METHOD_NAME" value="testGetAllPromotions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="IBE-Backend" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="IBE-Backend" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.IbeApplication" />
+        <item itemvalue="JUnit.RoomPageControllerTest.testGetAllPromotions" />
       </list>
     </recent_temporary>
   </component>
@@ -110,11 +205,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8439f998-af17-48df-b668-3ed063207154" name="Changes" comment="" />
-      <created>1711643908274</created>
+      <changelist id="cf0fdec5-fe63-4902-b3be-e70fac69374a" name="Changes" comment="" />
+      <created>1711442638271</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1711643908274</updated>
+      <updated>1711442638271</updated>
     </task>
     <servers />
   </component>

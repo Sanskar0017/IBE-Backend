@@ -10,6 +10,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.Map;
@@ -34,8 +35,7 @@ public class TenantConfig {
     private int maxRooms;
 
     public Map<String, Object> getConfigData() throws IOException {
-        BlobServiceClientBuilder blobServiceClientBuilder = new BlobServiceClientBuilder()
-                .connectionString(connectionString);
+        BlobServiceClientBuilder blobServiceClientBuilder = new BlobServiceClientBuilder().connectionString(connectionString);
         BlobContainerClient containerClient = blobServiceClientBuilder.buildClient().getBlobContainerClient(containerName);
 
         BlobClient blobClient = containerClient.getBlobClient("data.json");
@@ -43,10 +43,9 @@ public class TenantConfig {
         blobClient.download(outputStream);
 
         String jsonData = new String(outputStream.toByteArray());
-
         ObjectMapper mapper = new ObjectMapper();
-        Map<String, Object> configData = mapper.readValue(jsonData, new TypeReference<Map<String, Object>>() {});
-
+        Map<String, Object> configData = mapper.readValue(jsonData, new TypeReference<Map<String, Object>>() {
+        });
         return configData;
     }
 }

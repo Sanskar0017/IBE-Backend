@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.team14.ibe.dto.TenantConfigDTO;
 import org.springframework.stereotype.Component;
+
 import java.io.IOException;
 import java.util.Map;
 
@@ -30,6 +31,7 @@ public class TenantConfigMapper {
     }
 
     public Map<String, Object> mapToMap(String jsonData) throws IOException {
-        return objectMapper.readValue(jsonData, new TypeReference<Map<String, Object>>() {});
+        return objectMapper.readValue(jsonData, new TypeReference<Map<String, Object>>() {
+        });
     }
 }

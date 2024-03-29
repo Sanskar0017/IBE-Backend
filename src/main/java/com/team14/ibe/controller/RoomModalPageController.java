@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-//@CrossOrigin(origins="*")
 public class RoomModalPageController {
 
     @Autowired
@@ -24,6 +23,7 @@ public class RoomModalPageController {
 
     @PostMapping("/validatepromocode")
     public ResponseEntity<PromoCodeResponseDTO> validatePromoCode(@RequestParam String promoCode) {
+        System.out.println(promoCode);
         PromoCodeResponseDTO promoCodeResponseDTO = roomModalPageService.getPromoCodeValidation(promoCode);
         return new ResponseEntity<>(promoCodeResponseDTO, HttpStatus.OK);
     }

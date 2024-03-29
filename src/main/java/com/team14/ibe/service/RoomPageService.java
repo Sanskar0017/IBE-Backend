@@ -88,7 +88,9 @@ public class RoomPageService {
     }
 
     public List<PromotionResponseDTO> getAllPromotions(int page, int size, boolean seniorCitizen, boolean kduMembership, boolean longWeekendDiscount, boolean militaryPersonnelDiscount, boolean upfrontPaymentDiscount, boolean weekendDiscount) {
-        log.info("service promotions 1");
+//public List<PromotionResponseDTO> getAllPromotions(int page, int size, boolean seniorCitizen, boolean kduMembership, boolean longWeekendDiscount, boolean militaryPersonnelDiscount, boolean upfrontPaymentDiscount, boolean weekendDiscount) {
+
+    log.info("service promotions 1");
         int skip = (page - 1) * size;
 
         HttpHeaders httpHeaders = new HttpHeaders();

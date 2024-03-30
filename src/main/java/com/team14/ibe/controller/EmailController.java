@@ -19,7 +19,7 @@ public class EmailController {
     private EmailService emailService;
 
     @Value("${email.sender}")
-    private String senderEmail;
+    public String senderEmail;
 
     @Value("${email.subject}")
     private String emailSubject;
@@ -29,6 +29,7 @@ public class EmailController {
 
     /**
      * Endpoint to send an email.
+     *
      * @param email The recipient email address.
      * @return ResponseEntity indicating the status of the email sending operation.
      */

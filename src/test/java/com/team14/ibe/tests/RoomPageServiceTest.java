@@ -32,17 +32,17 @@
 //        MockitoAnnotations.openMocks(this);
 //    }
 //
-//    @Test
-//    void testGetAllRoomTypes() {
-//        ResponseEntity<String> responseEntity = ResponseEntity.ok("{\"data\": {\"listRoomTypes\": []}}");
-//        when(restTemplate.exchange(anyString(), eq(HttpMethod.POST), any(HttpEntity.class), eq(String.class))).thenReturn(responseEntity);
-//
-//        List<RoomResponseDTO> roomTypes = roomPageService.getAllRoomTypes(2,3);
-//
-//        verify(restTemplate, times(1)).exchange(anyString(), eq(HttpMethod.POST), any(HttpEntity.class), eq(String.class));
-//
-//        assertEquals(new ArrayList<RoomResponseDTO>(), roomTypes);
-//    }
+////    @Test
+////    void testGetAllRoomTypes() {
+////        ResponseEntity<String> responseEntity = ResponseEntity.ok("{\"data\": {\"listRoomTypes\": []}}");
+////        when(restTemplate.exchange(anyString(), eq(HttpMethod.POST), any(HttpEntity.class), eq(String.class))).thenReturn(responseEntity);
+////
+////        List<RoomResponseDTO> roomTypes = roomPageService.getAllRoomTypes(2,3);
+////
+////        verify(restTemplate, times(1)).exchange(anyString(), eq(HttpMethod.POST), any(HttpEntity.class), eq(String.class));
+////
+////        assertEquals(new ArrayList<RoomResponseDTO>(), roomTypes);
+////    }
 //
 //    @Test
 //    void testGetAllPromotions() {
@@ -51,7 +51,7 @@
 //        when(restTemplate.exchange(anyString(), eq(HttpMethod.POST), any(HttpEntity.class), eq(String.class))).thenReturn(responseEntity);
 //
 //        // Call the service method
-//        List<PromotionResponseDTO> promotions = roomPageService.getAllPromotions(2,3);
+//        List<PromotionResponseDTO> promotions = roomPageService.getAllPromotions(1,6, true, true, true, true, true, true);
 //
 //        // Verify restTemplate.exchange() is called once
 //        verify(restTemplate, times(1)).exchange(anyString(), eq(HttpMethod.POST), any(HttpEntity.class), eq(String.class));

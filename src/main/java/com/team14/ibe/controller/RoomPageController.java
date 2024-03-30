@@ -64,12 +64,12 @@ public class RoomPageController {
     @GetMapping("/promotions")
     public ResponseEntity<List<PromotionResponseDTO>> getAllPromotions(@RequestParam(defaultValue = "1") int page,
                                                                        @RequestParam(defaultValue = "6") int size,
-                                                                       @RequestParam(defaultValue = "false") boolean seniorCitizen,
-                                                                       @RequestParam(defaultValue = "false") boolean kduMembership,
-                                                                       @RequestParam(defaultValue = "false") boolean longWeekendDiscount,
-                                                                       @RequestParam(defaultValue = "false") boolean militaryPersonnelDiscount,
-                                                                       @RequestParam(defaultValue = "false") boolean upfrontPaymentDiscount,
-                                                                       @RequestParam(defaultValue = "false") boolean weekendDiscount) {
+                                                                       @RequestParam(defaultValue = "true") boolean seniorCitizen,
+                                                                       @RequestParam(defaultValue = "true") boolean kduMembership,
+                                                                       @RequestParam(defaultValue = "true") boolean longWeekendDiscount,
+                                                                       @RequestParam(defaultValue = "true") boolean militaryPersonnelDiscount,
+                                                                       @RequestParam(defaultValue = "true") boolean upfrontPaymentDiscount,
+                                                                       @RequestParam(defaultValue = "true") boolean weekendDiscount) {
         List<PromotionResponseDTO> promotions = roomPageService.getAllPromotions(page, size, seniorCitizen, kduMembership, longWeekendDiscount, militaryPersonnelDiscount, upfrontPaymentDiscount, weekendDiscount);
         return new ResponseEntity<>(promotions, HttpStatus.OK);
     }

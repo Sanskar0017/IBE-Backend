@@ -7,4 +7,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface RatingReviewRepository extends JpaRepository<RatingReview, Long> {
     RatingReview findByRoomTypeId(Long roomTypeId);
+    RatingReview findByRoomTypeIdAndPropertyId(Long roomTypeId, Long propertyId);
+
 }

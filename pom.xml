@@ -110,6 +110,22 @@
             <scope>import</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.azure/azure-sdk-bom -->
+        <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-sdk-bom</artifactId>
+            <version>1.2.21</version>
+            <type>pom</type>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.azure/azure-communication-email -->
+        <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-communication-email</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+
 
         <dependency>
             <groupId>org.projectlombok</groupId>

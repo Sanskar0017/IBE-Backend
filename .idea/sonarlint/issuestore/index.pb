@@ -77,3 +77,17 @@ k
 ;src/main/java/com/team14/ibe/mapper/TenantConfigMapper.java,d/2/d2b7e19d353fb25ee747a6e357be50a43bf7e2c7
 r
 Bsrc/main/java/com/team14/ibe/testController/GraphQLController.java,2/6/260f4723d4e0a321acfb2ef78a94eb39184b95fb
+i
+9src/main/java/com/team14/ibe/config/AzureEmailConfig.java,e/5/e5f51777bb99f7c281f806f46a9c91afb95c4806
+f
+6src/main/java/com/team14/ibe/service/EmailService.java,9/1/91e7292c008bb4c2671ea78b1a2436a2f6c16d01
+m
+=src/main/java/com/team14/ibe/dto/Request/EmailRequestDTO.java,2/6/2609892e52148cbf06b30324e202c96e0afc4537
+l
+<src/main/java/com/team14/ibe/controller/EmailController.java,c/d/cd1dd0c28512a7b973ec4e955a6d46dd537873fd
+q
+Asrc/test/java/com/team14/ibe/tests/LandingPageControllerTest.java,a/4/a4c774e16a6057d3e386d6fb238cdd17adc74488
+k
+;src/test/java/com/team14/ibe/tests/RoomPageServiceTest.java,f/1/f1d876a7895f6a64862df940bc5deb7a5c0b89c5
+r
+Bsrc/test/java/com/team14/ibe/tests/RatingReviewControllerTest.java,9/b/9b78d1cae5695619bd77c2adb575dd2eb76c3b62

@@ -4,6 +4,7 @@
 //import com.team14.ibe.tests.RoomPageControllerTest;
 //import com.team14.ibe.tests.TenantConfigControllerTest;
 //import com.team14.ibe.tests.TenantConfigDTOTest;
+//import com.team14.ibe.tests.RatingReviewControllerTest; // Import RatingReviewControllerTest
 //import org.junit.jupiter.api.MethodOrderer;
 //import org.junit.jupiter.api.Order;
 //import org.junit.jupiter.api.Test;

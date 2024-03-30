@@ -19,6 +19,7 @@ public class RatingReviewController {
 
     /**
      * Constructor for RatingReviewController.
+     *
      * @param ratingReviewService The service responsible for handling rating and review operations.
      */
     @Autowired
@@ -28,6 +29,7 @@ public class RatingReviewController {
 
     /**
      * Endpoint to receive and save property rating and review.
+     *
      * @param propertyRatingReviewRequest The request containing property rating and review data.
      * @return ResponseEntity indicating success or failure of the operation.
      */
@@ -39,6 +41,7 @@ public class RatingReviewController {
 
     /**
      * Endpoint to retrieve rating and review for a property.
+     *
      * @param roomId The ID of the room for which rating and review are requested.
      * @return ResponseEntity containing rating and review data.
      */

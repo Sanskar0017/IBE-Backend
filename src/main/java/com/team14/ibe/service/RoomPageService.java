@@ -6,6 +6,8 @@ import com.team14.ibe.dto.response.PromotionResponseDTO;
 import com.team14.ibe.dto.response.RoomAvailabilityDTO;
 import com.team14.ibe.dto.response.RoomRateDTO;
 import com.team14.ibe.dto.response.RoomResponseDTO;
+import com.team14.ibe.models.RatingReview;
+import com.team14.ibe.repository.RatingReviewRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
@@ -24,6 +26,11 @@ public class RoomPageService {
     private String graphqlEndpoint;
 
     private final RestTemplate restTemplate = new RestTemplate();
+    private final RatingReviewRepository ratingReviewRepository;
+
+    public RoomPageService(RatingReviewRepository ratingReviewRepository) {
+        this.ratingReviewRepository = ratingReviewRepository;
+    }
 
     /**
      * Retrieves all room types.
@@ -82,7 +89,15 @@ public class RoomPageService {
                     int singleBed = roomTypeNode.get("single_bed").asInt();
                     int doubleBed = roomTypeNode.get("double_bed").asInt();
                     int maxCapacity = roomTypeNode.get("max_capacity").asInt();
-                    RoomResponseDTO roomResponseDTO = new RoomResponseDTO(roomTypeId, roomTypeName, areaInSquareFeet, singleBed, doubleBed, maxCapacity);
+                    log.info("Getting Data from RatingReview Table Postgres");
+                    RatingReview ratingReview = ratingReviewRepository.findByRoomTypeId((long) roomTypeId);
+                    Double rating = 4.0;
+                    int reviewCount = 128;
+                    if(ratingReview != null) {
+                        rating =  ratingReview.getRating();
+                        reviewCount = ratingReview.getReviewCount();
+                    }
+                    RoomResponseDTO roomResponseDTO = new RoomResponseDTO(roomTypeId, roomTypeName, areaInSquareFeet, singleBed, doubleBed, maxCapacity, rating, reviewCount);
                     roomTypes.add(roomResponseDTO);
                 }
             }

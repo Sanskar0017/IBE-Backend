@@ -33,6 +33,8 @@ public class TenantConfig {
     private int maxGuestCount;
     private Integer[] roomCountOptions;
     private int maxRooms;
+    private String[] amenities;
+    private String description;
 
     public Map<String, Object> getConfigData() throws IOException {
         BlobServiceClientBuilder blobServiceClientBuilder = new BlobServiceClientBuilder().connectionString(connectionString);
@@ -44,8 +46,7 @@ public class TenantConfig {
 
         String jsonData = new String(outputStream.toByteArray());
         ObjectMapper mapper = new ObjectMapper();
-        Map<String, Object> configData = mapper.readValue(jsonData, new TypeReference<Map<String, Object>>() {
-        });
+        Map<String, Object> configData = mapper.readValue(jsonData, new TypeReference<Map<String, Object>>() {});
         return configData;
     }
 }

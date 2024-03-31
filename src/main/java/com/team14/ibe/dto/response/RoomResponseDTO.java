@@ -16,6 +16,9 @@ public class RoomResponseDTO {
     private int singleBed;
     private int doubleBed;
     private int maxCapacity;
+
+    private Double rating;
+    private int reviewCount;
 }
 
 

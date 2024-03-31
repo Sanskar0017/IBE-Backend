@@ -11,11 +11,8 @@ public class RoomDataMapper {
 
     public Map<String, Double> mapRoomData(List<RoomRateDTO> roomRates, List<RoomAvailabilityDTO> roomAvailabilities) {
         Map<String, Double> resultMap = new HashMap<>();
-
-        // Step 1: Combine the data based on room type and date
         Map<String, Map<String, Double>> combinedData = combineData(roomRates, roomAvailabilities);
 
-        // Step 2: Calculate the minimum rate for each room type and take average for available days
         for (Map.Entry<String, Map<String, Double>> entry : combinedData.entrySet()) {
             String roomType = entry.getKey();
             Map<String, Double> ratesByDate = entry.getValue();
@@ -24,7 +21,6 @@ public class RoomDataMapper {
             double totalRate = 0.0;
             int availableDays = 0;
 
-            // Calculate total rate and count available days
             for (Map.Entry<String, Double> rateEntry : ratesByDate.entrySet()) {
                 Double rate = rateEntry.getValue();
                 if (rate != null) {
@@ -33,7 +29,6 @@ public class RoomDataMapper {
                 }
             }
 
-            // Calculate average rate for available days
             double averageRate = availableDays > 0 ? totalRate / availableDays : 0.0;
             resultMap.put(roomType, averageRate);
         }
@@ -44,7 +39,6 @@ public class RoomDataMapper {
     private Map<String, Map<String, Double>> combineData(List<RoomRateDTO> roomRates, List<RoomAvailabilityDTO> roomAvailabilities) {
         Map<String, Map<String, Double>> combinedData = new HashMap<>();
 
-        // Combine room rates by room type and date
         for (RoomRateDTO roomRate : roomRates) {
             String roomType = roomRate.getRoomTypeName();
             String date = roomRate.getDate();

@@ -1,4 +1,5 @@
 package com.team14.ibe.service;
+
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Value;
@@ -15,6 +16,7 @@ public class LandingPageService {
     @Value("${graphql.endpoint}")
     private String graphqlEndpoint;
     private final RestTemplate restTemplate = new RestTemplate();
+
     public Map<String, Double> getMinimumPricesByDate() {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);

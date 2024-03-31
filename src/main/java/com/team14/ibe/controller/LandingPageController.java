@@ -9,14 +9,22 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
+/**
+ * Controller class to handle requests related to the landing page.
+ */
 @RestController
 @RequestMapping("/api")
 public class LandingPageController {
+
     @Autowired
     private LandingPageService landingPageService;
-    @GetMapping(value="/property-rates", produces= MediaType.APPLICATION_JSON_VALUE)
+
+    /**
+     * Endpoint to fetch property rates.
+     * @return A map containing property rates.
+     */
+    @GetMapping(value = "/property-rates", produces = MediaType.APPLICATION_JSON_VALUE)
     public Map<String, Double> getPropertyRates() {
         return landingPageService.getMinimumPricesByDate();
     }
-
 }

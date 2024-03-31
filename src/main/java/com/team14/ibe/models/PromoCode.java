@@ -1,4 +1,5 @@
 package com.team14.ibe.models;
+
 import lombok.*;
 
 import jakarta.persistence.*;

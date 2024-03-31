@@ -13,11 +13,11 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-              .allowedOrigins("https://white-dune-044f84310.4.azurestaticapps.net/")
-//                .allowedOrigins("http://localhost:5173/")
+//              .allowedOrigins("https://white-dune-044f84310.4.azurestaticapps.net")
+                .allowedOrigins("*")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*")
-                .allowCredentials(true)
+//                .allowCredentials(true)
                 .maxAge(3600);
     }
 }

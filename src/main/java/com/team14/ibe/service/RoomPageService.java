@@ -6,6 +6,8 @@ import com.team14.ibe.dto.response.PromotionResponseDTO;
 import com.team14.ibe.dto.response.RoomAvailabilityDTO;
 import com.team14.ibe.dto.response.RoomRateDTO;
 import com.team14.ibe.dto.response.RoomResponseDTO;
+import com.team14.ibe.models.RatingReview;
+import com.team14.ibe.repository.RatingReviewRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
@@ -18,15 +20,27 @@ import java.util.List;
 @Service
 @Slf4j
 public class RoomPageService {
-
     @Value("${api.key}")
     private String apiKey;
-
     @Value("${graphql.endpoint}")
     private String graphqlEndpoint;
 
     private final RestTemplate restTemplate = new RestTemplate();
+    private final RatingReviewRepository ratingReviewRepository;
 
+    public RoomPageService(RatingReviewRepository ratingReviewRepository) {
+        this.ratingReviewRepository = ratingReviewRepository;
+    }
+
+    /**
+     * Retrieves all room types.
+     * @param page Page number for pagination.
+     * @param size Number of items per page.
+     * @param singleBeds Boolean indicating if single beds are required.
+     * @param superDeluxe Boolean indicating if super deluxe rooms are required.
+     * @param familyDeluxe Boolean indicating if family deluxe rooms are required.
+     * @return List of RoomResponseDTO objects containing room type information.
+     */
     public List<RoomResponseDTO> getAllRoomTypes(int page, int size, boolean singleBeds, boolean superDeluxe, boolean familyDeluxe) {
         int skip = (page - 1) * size;
 
@@ -54,8 +68,7 @@ public class RoomPageService {
             queryBuilder.append("]");
         }
 
-        queryBuilder.append(" }, take: ").append(size).append(", skip: ").append(skip)
-                .append(") { room_type_id room_type_name area_in_square_feet single_bed double_bed max_capacity } }\\\" }\" }");
+        queryBuilder.append(" }, take: ").append(size).append(", skip: ").append(skip).append(") { room_type_id room_type_name area_in_square_feet single_bed double_bed max_capacity } }\\\" }\" }");
 
         HttpEntity<String> requestEntity = new HttpEntity<>(queryBuilder.toString(), httpHeaders);
 
@@ -76,7 +89,15 @@ public class RoomPageService {
                     int singleBed = roomTypeNode.get("single_bed").asInt();
                     int doubleBed = roomTypeNode.get("double_bed").asInt();
                     int maxCapacity = roomTypeNode.get("max_capacity").asInt();
-                    RoomResponseDTO roomResponseDTO = new RoomResponseDTO(roomTypeId, roomTypeName, areaInSquareFeet, singleBed, doubleBed, maxCapacity);
+                    log.info("Getting Data from RatingReview Table Postgres");
+                    RatingReview ratingReview = ratingReviewRepository.findByRoomTypeId((long) roomTypeId);
+                    Double rating = 4.0;
+                    int reviewCount = 128;
+                    if(ratingReview != null) {
+                        rating =  ratingReview.getRating();
+                        reviewCount = ratingReview.getReviewCount();
+                    }
+                    RoomResponseDTO roomResponseDTO = new RoomResponseDTO(roomTypeId, roomTypeName, areaInSquareFeet, singleBed, doubleBed, maxCapacity, rating, reviewCount);
                     roomTypes.add(roomResponseDTO);
                 }
             }
@@ -87,8 +108,19 @@ public class RoomPageService {
         return roomTypes;
     }
 
+    /**
+     * Retrieves all promotions.
+     * @param page Page number for pagination.
+     * @param size Number of items per page.
+     * @param seniorCitizen Boolean indicating if promotions for senior citizens are required.
+     * @param kduMembership Boolean indicating if promotions for KDU membership are required.
+     * @param longWeekendDiscount Boolean indicating if long weekend discounts are required.
+     * @param militaryPersonnelDiscount Boolean indicating if discounts for military personnel are required.
+     * @param upfrontPaymentDiscount Boolean indicating if upfront payment discounts are required.
+     * @param weekendDiscount Boolean indicating if weekend discounts are required.
+     * @return List of PromotionResponseDTO objects containing promotion information.
+     */
     public List<PromotionResponseDTO> getAllPromotions(int page, int size, boolean seniorCitizen, boolean kduMembership, boolean longWeekendDiscount, boolean militaryPersonnelDiscount, boolean upfrontPaymentDiscount, boolean weekendDiscount) {
-        log.info("service promotions 1");
         int skip = (page - 1) * size;
 
         HttpHeaders httpHeaders = new HttpHeaders();
@@ -146,8 +178,7 @@ public class RoomPageService {
 
         queryBuilder.append(" ] }");
 
-        queryBuilder.append(", take: ").append(size).append(", skip: ").append(skip)
-                .append(") { promotion_id promotion_title promotion_description minimum_days_of_stay is_deactivated price_factor } }\" }");
+        queryBuilder.append(", take: ").append(size).append(", skip: ").append(skip).append(") { promotion_id promotion_title promotion_description minimum_days_of_stay is_deactivated price_factor } }\" }");
 
         HttpEntity<String> requestEntity = new HttpEntity<>(queryBuilder.toString(), httpHeaders);
 
@@ -177,6 +208,10 @@ public class RoomPageService {
         return promotions;
     }
 
+    /**
+     * Retrieves room availability.
+     * @return List of RoomAvailabilityDTO objects containing room availability information.
+     */
     public List<RoomAvailabilityDTO> getRoomAvailability() {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
@@ -209,6 +244,10 @@ public class RoomPageService {
         return roomAvailabilities;
     }
 
+    /**
+     * Retrieves room rates.
+     * @return List of RoomRateDTO objects containing room rate information.
+     */
     public List<RoomRateDTO> getRoomRate() {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);

@@ -91,8 +91,8 @@ public class RoomPageService {
                     int maxCapacity = roomTypeNode.get("max_capacity").asInt();
                     log.info("Getting Data from RatingReview Table Postgres");
                     RatingReview ratingReview = ratingReviewRepository.findByRoomTypeId((long) roomTypeId);
-                    Double rating = 4.0;
-                    int reviewCount = 128;
+                    Double rating = 0.0;
+                    int reviewCount = 0;
                     if(ratingReview != null) {
                         rating =  ratingReview.getRating();
                         reviewCount = ratingReview.getReviewCount();

@@ -5,28 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0fdec5-fe63-4902-b3be-e70fac69374a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9b78d1cae5695619bd77c2adb575dd2eb76c3b62" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9b78d1cae5695619bd77c2adb575dd2eb76c3b62" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fd3aa62ce1bf2de21d1ff54d3edafbe4a5e5a2e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fd3aa62ce1bf2de21d1ff54d3edafbe4a5e5a2e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4c774e16a6057d3e386d6fb238cdd17adc74488" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4c774e16a6057d3e386d6fb238cdd17adc74488" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b85dddef361c5d66a297821e4fd2831ecb540d57" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b85dddef361c5d66a297821e4fd2831ecb540d57" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e334e4dbb615d7ada21d7323b8120fe7e0254498" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e334e4dbb615d7ada21d7323b8120fe7e0254498" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/1/f1d876a7895f6a64862df940bc5deb7a5c0b89c5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/1/f1d876a7895f6a64862df940bc5deb7a5c0b89c5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f538b7143f32785c2048dce511e474239cdd59aa" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f538b7143f32785c2048dce511e474239cdd59aa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/479534e0fc3afcdae5710cab6dd6f0a94f3c9bfc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/56c74e9bd013f25adf4ef7a780c420f33aa7905b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/0/90bf971c37442706033981bc8c0908e5cf897806" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/0/90bf971c37442706033981bc8c0908e5cf897806" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91e7292c008bb4c2671ea78b1a2436a2f6c16d01" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91e7292c008bb4c2671ea78b1a2436a2f6c16d01" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae86f871aa4c57499ea7af804dd5717f6bd1fcf4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1d35b8769cd96d9ea1043515d7a8f4058a04cb8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cd1dd0c28512a7b973ec4e955a6d46dd537873fd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cd1dd0c28512a7b973ec4e955a6d46dd537873fd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/7/479534e0fc3afcdae5710cab6dd6f0a94f3c9bfc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/6/56c74e9bd013f25adf4ef7a780c420f33aa7905b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/e/ae86f871aa4c57499ea7af804dd5717f6bd1fcf4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/1/c1d35b8769cd96d9ea1043515d7a8f4058a04cb8" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/EmailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/EmailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/dto/PromoCodeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/dto/PromoCodeDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/IBEApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/IBEApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/LandingPageControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/LandingPageControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/RatingReviewControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/RatingReviewControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/RoomPageControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/RoomPageControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/RoomPageServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/RoomPageServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/TenantConfigControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/TenantConfigControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/TenantConfigDTOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/team14/ibe/tests/TenantConfigDTOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/RoomPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/RoomPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/RatingReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/RatingReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/RoomPageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/RoomPageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/EmailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/EmailController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/dto/PromoCodeDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/dto/PromoCodeDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/IBEApplicationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/IBEApplicationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/IBEApplicationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/dto/response/RoomResponseDTOTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/service/GraphQLTestingServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/service/LandingPageServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/tests/LandingPageControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/tests/RatingReviewControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/tests/RatingReviewServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/tests/RoomModalPageControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/tests/RoomModalPageServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/tests/RoomPageControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/tests/RoomPageServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/tests/TenantConfigControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/tests/TenantConfigDTOTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/team14/ibe/tests/TenantServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,35 +67,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.IbeApplication.executor": "Run",
-    "IBE.wasFacetEverAdded": "true",
-    "JUnit.EmailControllerTest.executor": "Run",
-    "JUnit.GraphQLTestingServiceTest.executor": "Run",
-    "JUnit.IBEApplicationTest.executor": "Run",
-    "JUnit.LandingPageServiceTest.executor": "Run",
-    "JUnit.RatingReviewControllerTest.executor": "Run",
-    "JUnit.RatingReviewServiceTest.executor": "Run",
-    "JUnit.RoomModalPageServiceTest.executor": "Run",
-    "JUnit.RoomPageControllerTest.testGetAllPromotions.executor": "Run",
-    "JUnit.RoomResponseDTOTest.testRoomResponseDTO.executor": "Run",
-    "JUnit.TenantServiceTest.executor": "Run",
-    "JUnit.com.team14.ibe in IBE.executor": "Coverage",
-    "JUnit.tests in IBE.executor": "Coverage",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "PTN-62",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/lenovo/testingDB/demo",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "template.copyright.formatting"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.IbeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;IBE.wasFacetEverAdded&quot;: &quot;true&quot;,
+    &quot;JUnit.EmailControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GraphQLTestingServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IBEApplicationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LandingPageServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RatingReviewControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RatingReviewServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RoomModalPageServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RoomPageControllerTest.testGetAllPromotions.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RoomResponseDTOTest.testRoomResponseDTO.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TenantServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.com.team14.ibe in IBE.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.tests in IBE.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;PTN-62&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/lenovo/testingDB/demo&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;template.copyright.formatting&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.tests in IBE">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/team14/ibe/service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.IbeApplication">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -113,17 +131,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmailControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IbeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.team14.ibe.IbeApplication" />
       <module name="IBE" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.team14.ibe.tests.*" />
+          <option name="PATTERN" value="com.team14.ibe.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.team14.ibe.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.team14.ibe.tests.EmailControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -197,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IbeApplication" />
         <item itemvalue="JUnit.tests in IBE" />
         <item itemvalue="JUnit.RoomResponseDTOTest.testRoomResponseDTO" />
         <item itemvalue="JUnit.GraphQLTestingServiceTest" />
         <item itemvalue="JUnit.LandingPageServiceTest" />
-        <item itemvalue="JUnit.EmailControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -227,6 +243,6 @@
     <SUITE FILE_PATH="coverage/IBE_Backend$com_team14_ibe_in_IBE.ic" NAME="com.team14.ibe in IBE Coverage Results" MODIFIED="1711832026125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.team14.ibe.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/IBE_Backend$tests_in_IBE.ic" NAME="tests in IBE Coverage Results" MODIFIED="1711834718576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/IBE_Backend$tests_in_IBE.ic" NAME="tests in IBE Coverage Results" MODIFIED="1711834903438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

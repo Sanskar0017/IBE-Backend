@@ -16,12 +16,15 @@ public class EmailService {
     @Autowired
     private EmailClient emailClient;
 
-    public void sendEmail(String sender, String recipient, String subject, String body) {
-        EmailMessage message = new EmailMessage().setSenderAddress(sender).setToRecipients(recipient).setSubject(subject).setBodyPlainText(body);
+    public void sendEmail(String sender, String recipient, String roomid, String propertyId, String subject, String body) {
+        String feedbackLink = body + "?roomid=" + roomid + "&propertyid=" + propertyId;
+
+        EmailMessage message = new EmailMessage().setSenderAddress(sender).setToRecipients(recipient).setSubject(subject).setBodyPlainText(feedbackLink);
 
         SyncPoller<EmailSendResult, EmailSendResult> poller = emailClient.beginSend(message);
         PollResponse<EmailSendResult> response = poller.waitForCompletion();
 
         log.info("Operation Id: {}", response.getValue().getId());
     }
+
 }

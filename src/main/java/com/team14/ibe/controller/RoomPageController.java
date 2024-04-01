@@ -45,7 +45,6 @@ public class RoomPageController {
                                                                  @RequestParam(defaultValue = "false") boolean singleBed,
                                                                  @RequestParam(defaultValue = "false") boolean superDeluxe,
                                                                  @RequestParam(defaultValue = "false") boolean familyDeluxe) {
-        System.out.println("coming");
         List<RoomResponseDTO> roomTypes = roomPageService.getAllRoomTypes(page, size, singleBed, superDeluxe, familyDeluxe);
         return new ResponseEntity<>(roomTypes, HttpStatus.OK);
     }

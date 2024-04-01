@@ -45,9 +45,13 @@ public class RatingReviewService {
             roomRating.setRating(rating);
             roomRating.setReviewCount(1);
         } else {
-            double totalRating = roomRating.getRating() + rating;
             int reviewCount = roomRating.getReviewCount() + 1;
-            double averageRating = totalRating / reviewCount;
+            double averageRating = (roomRating.getRating() * (roomRating.getReviewCount()) + rating) / reviewCount;
+
+            averageRating = Math.round(averageRating * 100.0) / 100.0;
+            if (averageRating < 1) {
+                averageRating = 1;
+            }
 
             roomRating.setRating(averageRating);
             roomRating.setReviewCount(reviewCount);

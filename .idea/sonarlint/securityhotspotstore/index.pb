@@ -109,3 +109,15 @@ i
 9src/main/java/com/team14/ibe/service/RoomRateService.java,e/b/eb1b00def1641231466cb78df33cb9edd7818073
 r
 Bsrc/main/java/com/team14/ibe/dto/response/RoomRateResponseDTO.java,9/7/97819d75d61ee778fb47c058a854e125195a6842
+o
+?src/main/java/com/team14/ibe/controller/PurchaseController.java,9/6/964189fa96e80ff9b90290e52ca1013a4e077583
+r
+Bsrc/main/java/com/team14/ibe/dto/response/PurchaseResponseDTO.java,4/7/475ae73ca479e046c4264c9fab325a4bc3b09438
+i
+9src/main/java/com/team14/ibe/dto/Request/PurchaseDTO.java,1/d/1d41e82f07e80de4068d6f9feaa5153e7a104acd
+g
+7src/main/java/com/team14/ibe/models/PurchaseEntity.java,c/1/c1984e794ce1a63ae2757348b9147e547463b24f
+o
+?src/main/java/com/team14/ibe/repository/PurchaseRepository.java,5/2/527392e1f7a6abe20794e41090d5025e796494fc
+i
+9src/main/java/com/team14/ibe/service/PurchaseService.java,2/1/2194d78d2f3ce3758a12eb4e714bca2797197ecc

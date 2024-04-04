@@ -8,8 +8,6 @@ import org.springframework.web.client.RestTemplate;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 @Service
@@ -30,8 +28,7 @@ public class RoomRateService {
         ObjectMapper objectMapper = new ObjectMapper();
 
         try {
-            String requestBody = "{ \"query\": \"query minimumnightlyrates { listRoomRateRoomTypeMappings(where: {room_type_id: {equals: " + roomTypeId + "}, room_rate: {date: {gt: \\\"" + startDate + "\\\", lt: \\\"" + endDate + "\\\"}}}) { room_rate_id room_rate { date basic_nightly_rate } } }\" }";
-            System.out.println(requestBody);
+            String requestBody = "{ \"query\": \"query minimumnightlyrates { listRoomRateRoomTypeMappings(where: {room_type_id: {equals: " + roomTypeId + "}, room_rate: {date: {gte: \\\"" + startDate + "\\\", lte: \\\"" + endDate + "\\\"}}}) { room_rate_id room_rate { date basic_nightly_rate } } }\" }";
             HttpEntity<String> requestEntity = new HttpEntity<>(requestBody, httpHeaders);
 
             ResponseEntity<String> responseEntity = restTemplate.exchange(graphqlEndpoint, HttpMethod.POST, requestEntity, String.class);
@@ -55,10 +52,11 @@ public class RoomRateService {
                     }
                 }
                 for (Map.Entry<String, Double> entry : minRates.entrySet()) {
-                    RoomRateResponseDTO roomRateDTO = new RoomRateResponseDTO(entry.getValue(), entry.getKey());
-                    System.out.println(entry.getValue());
+                    String date = entry.getKey().substring(0, 10);
+                    RoomRateResponseDTO roomRateDTO = new RoomRateResponseDTO(entry.getValue(), date);
                     roomRates.add(roomRateDTO);
                 }
+
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -69,7 +67,15 @@ public class RoomRateService {
                 return o1.getDate().compareTo(o2.getDate());
             }
         });
-        System.out.println(roomRates);
         return roomRates;
+    }
+
+    public Map<String, Double> getRoomRatesMap(int roomTypeId, String startDate, String endDate) {
+        List<RoomRateResponseDTO> roomRates = getRoomRates(roomTypeId, startDate, endDate);
+        Map<String, Double> roomRatesMap = new LinkedHashMap<>();
+        for (RoomRateResponseDTO roomRate : roomRates) {
+            roomRatesMap.put(roomRate.getDate(), roomRate.getNightlyRate());
+        }
+        return roomRatesMap;
     }
 }

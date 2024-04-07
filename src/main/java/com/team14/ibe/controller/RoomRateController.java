@@ -20,8 +20,11 @@ public class RoomRateController {
             @RequestParam String startDate,
             @RequestParam String endDate
     ) {
+        System.out.println("room rates");
         try {
+            System.out.println("room rate fetching " + roomTypeId + " " + startDate + " " + endDate);
             Map<String, Double> roomRates = roomRateService.getRoomRatesMap(roomTypeId, startDate, endDate);
+            System.out.println(roomRates);
             return ResponseEntity.ok(roomRates);
         } catch (Exception e) {
             // Handle exception and return error response

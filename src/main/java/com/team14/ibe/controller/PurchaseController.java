@@ -34,7 +34,6 @@ package com.team14.ibe.controller;//package com.team14.ibe.controller;
 //    }
 //}
 import com.team14.ibe.dto.Request.PurchaseDTO;
-//import com.team14.ibe.dto.Response.PurchaseResponseDTO;
 import com.team14.ibe.dto.response.PurchaseResponseDTO;
 import com.team14.ibe.service.PurchaseService;
 import org.springframework.beans.factory.annotation.Autowired;

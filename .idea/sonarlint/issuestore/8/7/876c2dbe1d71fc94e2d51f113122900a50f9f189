@@ -1,0 +1,10 @@
+
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8½ÌŠ ë1
+G	java:S1062"+Replace this use of System.out by a logger.(´¾‘µ8¡§± ë1
+L	java:S1068"+Replace this use of System.out by a logger.(˜Š¿Ûüÿÿÿÿ8—² ë1
+]	java:S1257"<This block of commented-out lines of code should be removed.(½ëè­øÿÿÿÿ8ğå’ºë1
+b
+java:S1117V"@Rename "objectMapper" which hides the field declared at line 25.(¡ôó‰ùÿÿÿÿ8’ÒŒºë1
+A
+java:S1168g"$Return an empty map instead of null.(¥¹ï8ºë1

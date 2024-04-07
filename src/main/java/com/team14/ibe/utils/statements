@@ -1,0 +1,9 @@
+INSERT INTO purchases (id, travelfirst_name, travellast_name, travelphone, travelemail, billingfirst_name, billinglast_name, address1, address2, billingemail, billingphone, card_number, cvv_code, exp_month, exp_year, zip)
+VALUES (14, 'Alice', 'Smith', '5551234567', 'alice@example.com', 'Alice', 'Smith', '456 Oak St', 'Apt 202', 'billing@example.com', '5559876543', '9876543210987654', '456', '10', '2025', '54321');
+
+
+INSERT INTO booking_concurrency (check_in_date, check_out_date, id, room_id)
+VALUES ('2024-06-11', '2024-06-11', 1, 817);
+
+INSERT INTO booking_concurrency (check_in_date, check_out_date, id, room_id)
+VALUES ('2024-06-11', '2024-06-11', 2, 835);

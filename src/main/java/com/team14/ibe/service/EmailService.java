@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 @Service
 @Slf4j
 public class EmailService {
-
     @Autowired
     private EmailClient emailClient;
 
@@ -27,4 +26,40 @@ public class EmailService {
         log.info("Operation Id: {}", response.getValue().getId());
     }
 
+    public void sendOTPEmail(String senderEmail, String recipientEmail, String emailSubject, String otp) {
+        String otpMessage = "<html><body style=\"font-family: Arial, sans-serif;\">" +
+                "<div style=\"font-weight: bold; letter-spacing: 1px;\">Your OTP is: " + otp + "</div>" +
+                "</body></html>";
+
+        EmailMessage message = new EmailMessage()
+                .setSenderAddress(senderEmail)
+                .setToRecipients(recipientEmail)
+                .setSubject(emailSubject)
+                .setBodyHtml(otpMessage);
+
+        SyncPoller<EmailSendResult, EmailSendResult> poller = emailClient.beginSend(message);
+        PollResponse<EmailSendResult> response = poller.waitForCompletion();
+
+        log.info("Operation Id: {}", response.getValue().getId());
+    }
+
+    public void sendbookingEmail(String senderEmail, String recipientEmail, String emailSubject, String bookingEmailId) {
+        String bookingLink = "http://localhost:5176/booking?bookingId=" + bookingEmailId;
+        String bookingMessage = "<html><body style=\"font-family: Arial, sans-serif;\">" +
+                "<div style=\"font-weight: bold; letter-spacing: 1px;\">Booking ID: " + bookingEmailId + "</div>" +
+                "<div>To view your booking details, click <a href=\"" + bookingLink + "\">here</a>.</div>" +
+                "</body></html>";
+
+        EmailMessage message = new EmailMessage()
+                .setSenderAddress(senderEmail)
+                .setToRecipients(recipientEmail)
+                .setSubject(emailSubject)
+                .setBodyHtml(bookingMessage);
+
+        SyncPoller<EmailSendResult, EmailSendResult> poller = emailClient.beginSend(message);
+        PollResponse<EmailSendResult> response = poller.waitForCompletion();
+
+        log.info("Operation Id: {}", response.getValue().getId());
+
+    }
 }

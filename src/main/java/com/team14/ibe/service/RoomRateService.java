@@ -33,6 +33,7 @@ public class RoomRateService {
 
             ResponseEntity<String> responseEntity = restTemplate.exchange(graphqlEndpoint, HttpMethod.POST, requestEntity, String.class);
             String responseBody = responseEntity.getBody();
+            System.out.println(responseBody);
 
             JsonNode responseJson = objectMapper.readTree(responseBody);
             JsonNode ratesNode = responseJson.get("data").get("listRoomRateRoomTypeMappings");

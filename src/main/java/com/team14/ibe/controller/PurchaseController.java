@@ -35,6 +35,8 @@ package com.team14.ibe.controller;//package com.team14.ibe.controller;
 //}
 import com.team14.ibe.dto.Request.PurchaseDTO;
 import com.team14.ibe.dto.response.PurchaseResponseDTO;
+import com.team14.ibe.models.PurchaseEntity;
+import com.team14.ibe.repository.PurchaseRepository;
 import com.team14.ibe.service.PurchaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -47,10 +49,12 @@ import java.util.List;
 public class PurchaseController {
 
     private PurchaseService purchaseService;
+    private PurchaseRepository purchaseRepository;
 
     @Autowired
-    public PurchaseController(PurchaseService purchaseService) {
+    public PurchaseController(PurchaseService purchaseService, PurchaseRepository purchaseRepository) {
         this.purchaseService = purchaseService;
+        this.purchaseRepository = purchaseRepository;
     }
 
     @PostMapping("/checkformdata")
@@ -70,6 +74,28 @@ public class PurchaseController {
     @GetMapping("/purchases")
     public ResponseEntity<List<PurchaseResponseDTO>> getAllPurchases() {
         List<PurchaseResponseDTO> purchases = purchaseService.getAllPurchases();
+        if(purchases != null) {
+            System.out.println(purchases);
+        }
         return ResponseEntity.ok(purchases);
+    }
+
+    @PostMapping("/cancel-booking")
+    public ResponseEntity<String> cancelBooking(@RequestParam("bookingId") String bookingId) {
+        try {
+
+//            boolean cancellationSuccess = purchaseService.cancelBooking(bookingId);
+            PurchaseEntity purchaseEntity = purchaseRepository.findByBookingId(bookingId);
+            System.out.println("cancel room with id : " + bookingId + " \n " +  purchaseEntity);
+             boolean cancellationSuccess = true;
+
+            if (cancellationSuccess) {
+                return ResponseEntity.ok("Booking cancelled successfully");
+            } else {
+                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Failed to cancel booking");
+            }
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Internal server error");
+        }
     }
 }

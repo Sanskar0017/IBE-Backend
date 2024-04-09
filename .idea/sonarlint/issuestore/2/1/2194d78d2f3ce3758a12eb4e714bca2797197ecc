@@ -1,5 +1,5 @@
 
-X	java:S125"<This block of commented-out lines of code should be removed.(åÙ§Ê8ÂÇ÷¾ë1
-^	java:S125Š"<This block of commented-out lines of code should be removed.(ˆÁ£ùÿÿÿÿ8Çû¤Öê1
-p
-java:S6204Ë"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8—ƒÈøê1
+t
+java:S62045"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(íıˆóùÿÿÿÿ8¬©ôõë1
+]	java:S125V"<This block of commented-out lines of code should be removed.(›ÌÂäøÿÿÿÿ8““öë1
+Y	java:S125¤"<This block of commented-out lines of code should be removed.(ÜÃúş8ÑÙ’öë1

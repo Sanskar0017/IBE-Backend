@@ -142,10 +142,7 @@ public class BookingConcurrencyService {
 
     public boolean addBooking(BookingConcurrency newBooking) {
         List<BookingConcurrency> existingBookings = bookingRepository.findAll();
-        // at this point we have all the intervals with bookings from db
-        System.out.println("existing bookings " + existingBookings);
         List<BookingConcurrency> mergedBookings = mergeIntervals(existingBookings, newBooking);
-        System.out.println("merged bookings " + mergedBookings);
         if (hasOverlap(mergedBookings)) {
             return false;
         }
@@ -155,7 +152,6 @@ public class BookingConcurrencyService {
                 newBooking.getCheckOutDate(),
                 newBooking.getRoomId()
         );
-        System.out.println("booking " + booking);
         bookingRepository.save(booking);
         return true;
     }
@@ -171,7 +167,6 @@ public class BookingConcurrencyService {
             if (mergedIntervals.isEmpty() || mergedIntervals.get(mergedIntervals.size() - 1).getCheckOutDate().isBefore(interval.getCheckInDate())) {
                 mergedIntervals.add(interval);
             } else {
-                // For simplicity, we're not merging room type IDs here as it's a single value
                 mergedIntervals.get(mergedIntervals.size() - 1).setCheckOutDate(
                         interval.getCheckOutDate().isAfter(mergedIntervals.get(mergedIntervals.size() - 1).getCheckOutDate()) ?
                                 interval.getCheckOutDate() : mergedIntervals.get(mergedIntervals.size() - 1).getCheckOutDate());

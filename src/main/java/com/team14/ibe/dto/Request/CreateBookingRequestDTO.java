@@ -21,4 +21,5 @@ public class CreateBookingRequestDTO {
     private double priceFactor;
     private String promotionTitle;
     private String promotionDescription;
+    private int promotionId;
 }

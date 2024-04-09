@@ -12,4 +12,6 @@ public class RoomAvailabilityRequestDTO {
     private Long roomTypeId;
     private String checkInDate;
     private String checkOutDate;
+    private String bookingId;
+    private int numberOfRooms;
 }

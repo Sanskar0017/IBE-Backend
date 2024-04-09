@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface PurchaseRepository extends JpaRepository<PurchaseEntity, Long> {
     List<PurchaseEntity> findAll();
+    PurchaseEntity findByBookingId(String bookingId);
 }

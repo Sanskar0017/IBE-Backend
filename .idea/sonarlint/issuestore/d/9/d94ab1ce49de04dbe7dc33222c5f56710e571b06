@@ -1,10 +1,6 @@
 
-X	java:S125"<This block of commented-out lines of code should be removed.(ìÒËã8Ã»™¾ë1
-@
-java:S21191"Save and re-use this "Random".(–ä½˜ıÿÿÿÿ8±Ù™¾ë1
-@
-java:S21196"Save and re-use this "Random".(“ÆÆ§ùÿÿÿÿ8±Ù™¾ë1
-@
-java:S2119;"Save and re-use this "Random".(¢šò‡ıÿÿÿÿ8²Ù™¾ë1
-;
-java:S2119@"Save and re-use this "Random".(¿ˆğ¦8³Ù™¾ë1
+]	java:S125"<This block of commented-out lines of code should be removed.(¶È²àüÿÿÿÿ8ˆ¸²Çë1
+c
+java:S1858O"F"getStartDate" returns a string, there's no need to call "toString()".(®æš•8ÍÇ™øë1
+a
+java:S1858P"D"getEndDate" returns a string, there's no need to call "toString()".(ºˆ»8ÏÇ™øë1

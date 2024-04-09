@@ -1,4 +1,9 @@
 
-X	java:S125"<This block of commented-out lines of code should be removed.(åÙ§Ê8şŠ½Öê1
+e
+java:S2583\"CChange this condition so that it does not always evaluate to "true"(Š±äùÿÿÿÿ8ÎÙôøë1
+X	java:S125"<This block of commented-out lines of code should be removed.(åÙ§Ê8ÏÙôøë1
 C
-java:S14529"&Remove usage of generic wildcard type.(Ì˜Şé8Ş®–Öê1
+java:S1452="&Remove usage of generic wildcard type.(Ì˜Şé8ÒÙôøë1
+F	java:S106N"+Replace this use of System.out by a logger.(¥úá8ÔÙôøë1
+]	java:S125W"<This block of commented-out lines of code should be removed.(¥ñÔÄÿÿÿÿÿ8ÕÙôøë1
+G	java:S106Y"+Replace this use of System.out by a logger.(„Ò‡ñ8ÕÙôøë1

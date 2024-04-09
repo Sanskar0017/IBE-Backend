@@ -8,32 +8,43 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d41e82f07e80de4068d6f9feaa5153e7a104acd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d41e82f07e80de4068d6f9feaa5153e7a104acd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/2194d78d2f3ce3758a12eb4e714bca2797197ecc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/2194d78d2f3ce3758a12eb4e714bca2797197ecc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/475ae73ca479e046c4264c9fab325a4bc3b09438" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/475ae73ca479e046c4264c9fab325a4bc3b09438" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5aac73f52e308a44637eeef8cf0e96a6091a14ef" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5aac73f52e308a44637eeef8cf0e96a6091a14ef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/7/876c2dbe1d71fc94e2d51f113122900a50f9f189" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/7/876c2dbe1d71fc94e2d51f113122900a50f9f189" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91e7292c008bb4c2671ea78b1a2436a2f6c16d01" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91e7292c008bb4c2671ea78b1a2436a2f6c16d01" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/964189fa96e80ff9b90290e52ca1013a4e077583" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/964189fa96e80ff9b90290e52ca1013a4e077583" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1984e794ce1a63ae2757348b9147e547463b24f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1984e794ce1a63ae2757348b9147e547463b24f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cd1dd0c28512a7b973ec4e955a6d46dd537873fd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cd1dd0c28512a7b973ec4e955a6d46dd537873fd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d94ab1ce49de04dbe7dc33222c5f56710e571b06" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d94ab1ce49de04dbe7dc33222c5f56710e571b06" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e0bc7a0b687f87808cc49067cecc127fb200fa6f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e0bc7a0b687f87808cc49067cecc127fb200fa6f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/b/eb1b00def1641231466cb78df33cb9edd7818073" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/b/eb1b00def1641231466cb78df33cb9edd7818073" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f528513065bece94cd72cd8218bdd86de1824ce7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f528513065bece94cd72cd8218bdd86de1824ce7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/f/ff37c2f7e8ae6c6c4e8e530c8a1659049968102f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/f/ff37c2f7e8ae6c6c4e8e530c8a1659049968102f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/EmailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/EmailController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/PurchaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/PurchaseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/RoomRateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/controller/RoomRateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/dto/Request/CreateBookingRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/dto/Request/CreateBookingRequestDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/dto/Request/PurchaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/dto/Request/PurchaseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/dto/Request/RoomAvailabilityRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/dto/Request/RoomAvailabilityRequestDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/dto/response/PurchaseResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/dto/response/PurchaseResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/mapper/CreateBookingResponseDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/mapper/CreateBookingResponseDTOMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/models/PurchaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/models/PurchaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/repository/PurchaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/repository/PurchaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/BookingConcurrencyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/BookingConcurrencyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/BookingMutationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/BookingMutationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/EmailService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/PurchaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/PurchaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/RoomRateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/RoomRateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/RoomAvailabilityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/service/RoomAvailabilityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team14/ibe/utils/statements" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team14/ibe/utils/statements" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/IbeApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/IbeApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/EmailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/EmailController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/RoomRateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/RoomRateController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/EmailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/RoomRateService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/RoomRateService$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/RoomRateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/RoomRateService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/PurchaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/controller/PurchaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/dto/Request/CreateBookingRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/dto/Request/CreateBookingRequestDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/dto/Request/PurchaseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/dto/Request/PurchaseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/dto/response/PurchaseResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/dto/response/PurchaseResponseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/mapper/CreateBookingResponseDTOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/mapper/CreateBookingResponseDTOMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/models/PurchaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/models/PurchaseEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/BookingConcurrencyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/BookingConcurrencyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/BookingMutationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/BookingMutationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/PurchaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/PurchaseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/RoomAvailabilityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team14/ibe/service/RoomAvailabilityService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,17 +243,6 @@
       <updated>1711442638271</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/team14/ibe/repository/PurchaseRepository.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IBE_Backend$com_team14_ibe_in_IBE.ic" NAME="com.team14.ibe in IBE Coverage Results" MODIFIED="1711832026125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

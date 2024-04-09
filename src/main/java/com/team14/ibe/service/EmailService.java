@@ -5,6 +5,8 @@ import com.azure.communication.email.models.EmailMessage;
 import com.azure.communication.email.models.EmailSendResult;
 import com.azure.core.util.polling.PollResponse;
 import com.azure.core.util.polling.SyncPoller;
+import com.team14.ibe.models.PurchaseEntity;
+import com.team14.ibe.repository.PurchaseRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,6 +16,12 @@ import org.springframework.stereotype.Service;
 public class EmailService {
     @Autowired
     private EmailClient emailClient;
+    private PurchaseRepository purchaseRepository;
+
+    @Autowired
+    public EmailService(PurchaseRepository purchaseRepository) {
+        this.purchaseRepository = purchaseRepository;
+    }
 
     public void sendEmail(String sender, String recipient, String roomid, String propertyId, String subject, String body) {
         String feedbackLink = body + "?roomid=" + roomid + "&propertyid=" + propertyId;
@@ -44,7 +52,9 @@ public class EmailService {
     }
 
     public void sendbookingEmail(String senderEmail, String recipientEmail, String emailSubject, String bookingEmailId) {
-        String bookingLink = "http://localhost:5176/booking?bookingId=" + bookingEmailId;
+        PurchaseEntity purchaseEntity = purchaseRepository.findByBookingId(bookingEmailId);
+        System.out.println(purchaseEntity);
+        String bookingLink = "http://localhost:5174/booking?bookingId=" + bookingEmailId;
         String bookingMessage = "<html><body style=\"font-family: Arial, sans-serif;\">" +
                 "<div style=\"font-weight: bold; letter-spacing: 1px;\">Booking ID: " + bookingEmailId + "</div>" +
                 "<div>To view your booking details, click <a href=\"" + bookingLink + "\">here</a>.</div>" +

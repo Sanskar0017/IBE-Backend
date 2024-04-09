@@ -2,8 +2,5 @@
 ]	java:S125"<This block of commented-out lines of code should be removed.(Éñ­æüÿÿÿÿ8ª¨øë1
 `
 java:S6813Œ"BRemove this field injection and use constructor injection instead.(êæÄŞ8’«´×ê1
-G	java:S106’"+Replace this use of System.out by a logger.(¥Š”`8­ÈÍ˜ë1
-H	java:S106”"+Replace this use of System.out by a logger.(ÓÇ ™8­ÈÍ˜ë1
-H	java:S106"+Replace this use of System.out by a logger.(ôÙóİ8®ÈÍ˜ë1
 i
 java:S1128"MRemove this unused import 'com.team14.ibe.dto.Request.BookingConcurrencyDTO'.(ÒŒçu8úÍÄ½ë1

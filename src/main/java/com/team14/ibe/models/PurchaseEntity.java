@@ -58,4 +58,5 @@ public class PurchaseEntity {
     private int numberOfRooms;
     private String roomname;
     private int roomTypeId;
+    private long bookingCount;
 }

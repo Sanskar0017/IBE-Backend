@@ -31,9 +31,10 @@ public class PurchaseService {
     @Transactional
     public boolean checkFormData(PurchaseDTO mappedData) {
         try {
-            PurchaseEntity purchaseEntity = mapDtoToEntity(mappedData);
+            long bookingCount = purchaseRepository.count() + 1;
+            PurchaseEntity purchaseEntity = mapDtoToEntity(mappedData, bookingCount);
             RoomAvailabilityRequestDTO roomAvailabilityResponseDTO = new RoomAvailabilityRequestDTO((long)purchaseEntity.getPropertyId(), (long)purchaseEntity.getRoomTypeId(), purchaseEntity.getStartDate(), purchaseEntity.getEndDate(), purchaseEntity.getBookingId(), purchaseEntity.getNumberOfRooms());
-            boolean checkRoomAvailability = roomAvailabilityService.processRoomAvailabilities(roomAvailabilityResponseDTO, purchaseEntity);
+            boolean checkRoomAvailability = roomAvailabilityService.processRoomAvailabilities(roomAvailabilityResponseDTO, purchaseEntity, purchaseEntity.getBookingCount());
 
             if(checkRoomAvailability) {
 //                purchaseRepository.save(purchaseEntity);
@@ -53,13 +54,13 @@ public class PurchaseService {
     }
 
 
-    private PurchaseEntity mapDtoToEntity(PurchaseDTO dto) {
+    private PurchaseEntity mapDtoToEntity(PurchaseDTO dto, long bookingCount) {
         PurchaseEntity entity = new PurchaseEntity();
 
         String startDate = convertToDate(dto.getStartDate());
         String endDate = convertToDate(dto.getEndDate());
 
-
+        entity.setBookingCount(bookingCount);
         entity.setBookingId(dto.getBookingId());
         entity.setTravelfirstName(dto.getTravelfirstName());
         entity.setTravellastName(dto.getTravellastName());

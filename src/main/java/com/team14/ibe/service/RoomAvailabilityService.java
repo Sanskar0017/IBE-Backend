@@ -36,7 +36,7 @@ public class RoomAvailabilityService {
     @Autowired
     private PurchaseRepository purchaseRepository;
 
-    public boolean processRoomAvailabilities(RoomAvailabilityRequestDTO requestDTO, PurchaseEntity purchaseEntity) {
+    public boolean processRoomAvailabilities(RoomAvailabilityRequestDTO requestDTO, PurchaseEntity purchaseEntity, long bookingCount) {
         Map<Long, List<Long>> roomAvailabilityMap = getRoomAvailabilities(requestDTO);
         log.info("All available rooms are: " + roomAvailabilityMap);
         List<BookingConcurrency> existingBookings = bookingConcurrencyService.getAllBookings();
@@ -52,7 +52,8 @@ public class RoomAvailabilityService {
         System.out.println("Narrowed Booking: " + roomAvailabilityMap);
         int numberOfRooms = requestDTO.getNumberOfRooms();
         String bookingId = requestDTO.getBookingId();
-        long confirmBooking = purchaseRepository.count() + 1;
+//        long confirmBooking = purchaseRepository.count() + 1;
+        long confirmBooking = bookingCount;
         System.out.println("Booking id mapped data is: " + confirmBooking);
         if (roomAvailabilityMap.size() < numberOfRooms) {
             log.info("Not enough room available");

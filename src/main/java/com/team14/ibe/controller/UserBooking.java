@@ -48,8 +48,8 @@ public class UserBooking {
     @Autowired
     private RoomAvailabilityService roomAvailabilityService;
 
-    @PostMapping("/roomAvailabilities")
-    public void getRoomAvailabilities(@RequestBody RoomAvailabilityRequestDTO roomAvailabilityRequestDTO) {
-        roomAvailabilityService.processRoomAvailabilities(roomAvailabilityRequestDTO);
-    }
+//    @PostMapping("/roomAvailabilities")
+//    public void getRoomAvailabilities(@RequestBody RoomAvailabilityRequestDTO roomAvailabilityRequestDTO) {
+//        roomAvailabilityService.processRoomAvailabilities(roomAvailabilityRequestDTO);
+//    }
 }

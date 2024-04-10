@@ -3,7 +3,6 @@ package com.team14.ibe.service;
 import com.team14.ibe.dto.Request.PurchaseDTO;
 import com.team14.ibe.dto.Request.RoomAvailabilityRequestDTO;
 import com.team14.ibe.dto.response.PurchaseResponseDTO;
-import com.team14.ibe.dto.response.RoomAvailabilityResponseDTO;
 import com.team14.ibe.models.PurchaseEntity;
 import com.team14.ibe.repository.PurchaseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,10 +33,10 @@ public class PurchaseService {
         try {
             PurchaseEntity purchaseEntity = mapDtoToEntity(mappedData);
             RoomAvailabilityRequestDTO roomAvailabilityResponseDTO = new RoomAvailabilityRequestDTO((long)purchaseEntity.getPropertyId(), (long)purchaseEntity.getRoomTypeId(), purchaseEntity.getStartDate(), purchaseEntity.getEndDate(), purchaseEntity.getBookingId(), purchaseEntity.getNumberOfRooms());
-            boolean checkRoomAvailability = roomAvailabilityService.processRoomAvailabilities(roomAvailabilityResponseDTO);
+            boolean checkRoomAvailability = roomAvailabilityService.processRoomAvailabilities(roomAvailabilityResponseDTO, purchaseEntity);
 
             if(checkRoomAvailability) {
-                purchaseRepository.save(purchaseEntity);
+//                purchaseRepository.save(purchaseEntity);
                 return true;
             }
             return false;
@@ -83,7 +82,6 @@ public class PurchaseService {
         entity.setEndDate(endDate);
         entity.setNightlyRate(dto.getNightlyRate());
         entity.setTotalAmount(dto.getTotalAmount());
-//        entity.setPromocodeSpecialPrice(dto.getPromocodeSpecialPrice());
         entity.setSubtotal(dto.getSubtotal());
         entity.setTaxAmount(dto.getTaxAmount());
         entity.setVatAmount(dto.getVatAmount());
@@ -92,6 +90,7 @@ public class PurchaseService {
         entity.setRoomname(dto.getRoomname());
         entity.setPropertyId(dto.getProperty());
         entity.setAdultCount(dto.getAdultCount());
+        entity.setNumberOfRooms(dto.getNumberOfRooms());
 
         entity.setChildCount(dto.getChildCount());
 
@@ -174,6 +173,8 @@ public class PurchaseService {
         dto.setAdultCount(entity.getAdultCount());
         dto.setChildCount(entity.getChildCount());
         dto.setTeenCount(entity.getTeenCount());
+        System.out.println("number of rooms dto: " + dto.getNumberOfRooms());
+        System.out.println("number of rooms: " + entity.getNumberOfRooms());
         dto.setNumberOfRooms(entity.getNumberOfRooms());
         dto.setProperty(entity.getPropertyId());
         dto.setRoomTypeId(entity.getRoomTypeId());

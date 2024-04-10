@@ -1,9 +1,9 @@
 
 e
-java:S2583\"CChange this condition so that it does not always evaluate to "true"(±השÿÿÿÿ8־Ùפרכ1
+java:S2583["CChange this condition so that it does not always evaluate to "true"(±השÿÿÿÿ8־Ùפרכ1
 X	java:S125"<This block of commented-out lines of code should be removed.(וÙ§Ê8ֿÙפרכ1
 C
 java:S1452="&Remove usage of generic wildcard type.(ּ˜Þי8ׂÙפרכ1
-F	java:S106N"+Replace this use of System.out by a logger.(¥תב8װÙפרכ1
-]	java:S125W"<This block of commented-out lines of code should be removed.(¥סװִÿÿÿÿÿ8ױÙפרכ1
-G	java:S106Y"+Replace this use of System.out by a logger.(„ׂ‡ס8ױÙפרכ1
+L	java:S106>"+Replace this use of System.out by a logger.(­כךתÿÿÿÿ8װÙפרכ1
+F	java:S106O"+Replace this use of System.out by a logger.(¥תב8ױÙפרכ1
+G	java:S106X"+Replace this use of System.out by a logger.(„ׂ‡ס8כ°üל1

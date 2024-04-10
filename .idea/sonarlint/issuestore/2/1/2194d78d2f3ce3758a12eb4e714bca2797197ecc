@@ -1,5 +1,9 @@
 
+c
+java:S1126&"AReplace this if-then-else statement by a single return statement.(¸…æ˜ÿÿÿÿÿ8ÚÏÏ³ì1
+]	java:S125'"<This block of commented-out lines of code should be removed.(ÅíÊÖøÿÿÿÿ8ÚÏÏ³ì1
 t
-java:S62045"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(íıˆóùÿÿÿÿ8¬©ôõë1
-]	java:S125V"<This block of commented-out lines of code should be removed.(›ÌÂäøÿÿÿÿ8““öë1
-Y	java:S125¤"<This block of commented-out lines of code should be removed.(ÜÃúş8ÑÙ’öë1
+java:S62044"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(íıˆóùÿÿÿÿ8ÛÏÏ³ì1
+Y	java:S125£"<This block of commented-out lines of code should be removed.(ÜÃúş8ëÏÏ³ì1
+G	java:S106°"+Replace this use of System.out by a logger.(İ”ÕU8íÏÏ³ì1
+H	java:S106±"+Replace this use of System.out by a logger.(ÑùÍı8íÏÏ³ì1

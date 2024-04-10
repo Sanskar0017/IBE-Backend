@@ -36,10 +36,11 @@ public class RoomAvailabilityService {
     @Autowired
     private PurchaseRepository purchaseRepository;
 
-    public boolean processRoomAvailabilities(RoomAvailabilityRequestDTO requestDTO) {
+    public boolean processRoomAvailabilities(RoomAvailabilityRequestDTO requestDTO, PurchaseEntity purchaseEntity) {
         Map<Long, List<Long>> roomAvailabilityMap = getRoomAvailabilities(requestDTO);
+        log.info("All available rooms are: " + roomAvailabilityMap);
         List<BookingConcurrency> existingBookings = bookingConcurrencyService.getAllBookings();
-
+        log.info("All Available Bookings: " + existingBookings);
         LocalDate checkInDate = LocalDate.parse(requestDTO.getCheckInDate().substring(0, 10));
         LocalDate checkOutDate = LocalDate.parse(requestDTO.getCheckOutDate().substring(0, 10));
 
@@ -48,18 +49,24 @@ public class RoomAvailabilityService {
                 roomAvailabilityMap.remove(booking.getRoomId());
             }
         }
-
+        System.out.println("Narrowed Booking: " + roomAvailabilityMap);
         int numberOfRooms = requestDTO.getNumberOfRooms();
         String bookingId = requestDTO.getBookingId();
-        long confirmBooking = 1;
+        long confirmBooking = purchaseRepository.count() + 1;
+        System.out.println("Booking id mapped data is: " + confirmBooking);
         if (roomAvailabilityMap.size() < numberOfRooms) {
             log.info("Not enough room available");
             return false;
         } else {
             int roomsBooked = 0;
             log.info("Creating booking with id : {}", bookingId);
-            PurchaseEntity purchaseEntity = purchaseRepository.findByBookingId(bookingId);
+            purchaseRepository.save(purchaseEntity);
+            PurchaseEntity purchaseEntityData = purchaseRepository.findByBookingId(bookingId);
+            log.info("Current Booking id is: " + bookingId);
+            log.info("purchase entity data is: " + purchaseEntityData);
+//            CreateBookingRequestDTO createBookingRequestDTO = new CreateBookingResponseDTOMapper().mapToBookingRequestDTO(purchaseEntityData);
             CreateBookingRequestDTO createBookingRequestDTO = new CreateBookingResponseDTOMapper().mapToBookingRequestDTO(purchaseEntity);
+            log.info("create booking response dto: " + createBookingRequestDTO);
             CreateBookingResponse createBookingResponse = bookingMutationService.createBooking(createBookingRequestDTO);
             log.info("Booking successfully Created with response : {}", createBookingResponse);
             for (Map.Entry<Long, List<Long>> entry : roomAvailabilityMap.entrySet()) {

@@ -59,6 +59,7 @@ public class PurchaseController {
 
     @PostMapping("/checkformdata")
     public ResponseEntity<?> checkFormData(@RequestBody PurchaseDTO mappedData) {
+        System.out.println("mapped data" + mappedData);
         try {
             boolean success = purchaseService.checkFormData(mappedData);
             if (success) {
@@ -83,8 +84,6 @@ public class PurchaseController {
     @PostMapping("/cancel-booking")
     public ResponseEntity<String> cancelBooking(@RequestParam("bookingId") String bookingId) {
         try {
-
-//            boolean cancellationSuccess = purchaseService.cancelBooking(bookingId);
             PurchaseEntity purchaseEntity = purchaseRepository.findByBookingId(bookingId);
             System.out.println("cancel room with id : " + bookingId + " \n " +  purchaseEntity);
              boolean cancellationSuccess = true;

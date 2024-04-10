@@ -75,13 +75,14 @@ import java.time.LocalDate;
 public class CreateBookingResponseDTOMapper {
 
     public CreateBookingRequestDTO mapToBookingRequestDTO(PurchaseEntity purchase) {
+        System.out.println("purchase: " + purchase);
         CreateBookingRequestDTO bookingRequest = new CreateBookingRequestDTO();
-        bookingRequest.setCheckInDate(purchase.getStartDate() != null ? purchase.getStartDate().toString() : LocalDate.now().toString()); // Set check-in date from purchase entity or today's date if null
-        bookingRequest.setCheckOutDate(purchase.getEndDate() != null ? purchase.getEndDate().toString() : LocalDate.now().plusDays(3).toString()); // Set check-out date from purchase entity or 3 days from today if null
+        bookingRequest.setCheckInDate(purchase.getStartDate() != null ? purchase.getStartDate().toString() : LocalDate.now().toString());
+        bookingRequest.setCheckOutDate(purchase.getEndDate() != null ? purchase.getEndDate().toString() : LocalDate.now().plusDays(3).toString());
         bookingRequest.setAdultCount(purchase.getAdultCount());
         bookingRequest.setChildCount(purchase.getChildCount());
         bookingRequest.setTotalCost((int) purchase.getTotalAmount());
-        bookingRequest.setAmountDueAtResort((int) purchase.getTotalAmount()); // Assuming amount due at resort is same as total amount
+        bookingRequest.setAmountDueAtResort((int) purchase.getTotalAmount());
         bookingRequest.setGuestName(purchase.getTravelfirstName());
         bookingRequest.setStatusId(purchase.getStatusId());
         bookingRequest.setPropertyId(purchase.getPropertyId());

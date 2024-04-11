@@ -59,4 +59,5 @@ public class PurchaseEntity {
     private String roomname;
     private int roomTypeId;
     private long bookingCount;
+    private boolean sendOffers;
 }

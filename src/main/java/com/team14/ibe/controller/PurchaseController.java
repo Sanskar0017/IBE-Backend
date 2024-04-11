@@ -37,6 +37,7 @@ import com.team14.ibe.dto.Request.PurchaseDTO;
 import com.team14.ibe.dto.response.PurchaseResponseDTO;
 import com.team14.ibe.models.PurchaseEntity;
 import com.team14.ibe.repository.PurchaseRepository;
+import com.team14.ibe.service.BookingCancellationService;
 import com.team14.ibe.service.PurchaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -50,11 +51,13 @@ public class PurchaseController {
 
     private PurchaseService purchaseService;
     private PurchaseRepository purchaseRepository;
+    private BookingCancellationService bookingCancellationService;
 
     @Autowired
-    public PurchaseController(PurchaseService purchaseService, PurchaseRepository purchaseRepository) {
+    public PurchaseController(PurchaseService purchaseService, PurchaseRepository purchaseRepository, BookingCancellationService bookingCancellationService) {
         this.purchaseService = purchaseService;
         this.purchaseRepository = purchaseRepository;
+        this.bookingCancellationService = bookingCancellationService;
     }
 
     @PostMapping("/checkformdata")
@@ -82,12 +85,9 @@ public class PurchaseController {
     }
 
     @PostMapping("/cancel-booking")
-    public ResponseEntity<String> cancelBooking(@RequestParam("bookingId") String bookingId) {
+    public ResponseEntity<String> cancelBooking(@RequestParam String bookingId) {
         try {
-            PurchaseEntity purchaseEntity = purchaseRepository.findByBookingId(bookingId);
-            System.out.println("cancel room with id : " + bookingId + " \n " +  purchaseEntity);
-             boolean cancellationSuccess = true;
-
+            boolean cancellationSuccess = bookingCancellationService.cancelBooking(bookingId);
             if (cancellationSuccess) {
                 return ResponseEntity.ok("Booking cancelled successfully");
             } else {

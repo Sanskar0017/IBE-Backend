@@ -6,8 +6,10 @@ import com.team14.ibe.dto.Request.CreateBookingRequestDTO;
 import com.team14.ibe.dto.Request.RoomAvailabilityRequestDTO;
 import com.team14.ibe.dto.response.CreateBookingResponse;
 import com.team14.ibe.mapper.CreateBookingResponseDTOMapper;
+import com.team14.ibe.models.AvailabilityEntity;
 import com.team14.ibe.models.BookingConcurrency;
 import com.team14.ibe.models.PurchaseEntity;
+import com.team14.ibe.repository.AvailabilityRepository;
 import com.team14.ibe.repository.PurchaseRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +37,8 @@ public class RoomAvailabilityService {
     private BookingMutationService bookingMutationService;
     @Autowired
     private PurchaseRepository purchaseRepository;
+    @Autowired
+    private AvailabilityRepository availabilityRepository;
 
     public boolean processRoomAvailabilities(RoomAvailabilityRequestDTO requestDTO, PurchaseEntity purchaseEntity, long bookingCount) {
         Map<Long, List<Long>> roomAvailabilityMap = getRoomAvailabilities(requestDTO);
@@ -76,6 +80,8 @@ public class RoomAvailabilityService {
                 }
                 bookingConcurrencyService.addBooking(new BookingConcurrency(checkInDate, checkOutDate, entry.getKey()));
                 for (Long availabilityId : entry.getValue()) {
+                    AvailabilityEntity roomAvailability = new AvailabilityEntity(availabilityId,  bookingId);
+                    availabilityRepository.save(roomAvailability);
                     Map<String, Object> updateResult = bookingMutationService.updateRoomAvailability(availabilityId, confirmBooking);
                 }
                 roomsBooked++;

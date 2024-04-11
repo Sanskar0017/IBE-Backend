@@ -4,7 +4,10 @@ import com.team14.ibe.dto.Request.PurchaseDTO;
 import com.team14.ibe.dto.Request.RoomAvailabilityRequestDTO;
 import com.team14.ibe.dto.response.PurchaseResponseDTO;
 import com.team14.ibe.models.PurchaseEntity;
+import com.team14.ibe.models.SendOfferEntity;
+import com.team14.ibe.repository.AvailabilityRepository;
 import com.team14.ibe.repository.PurchaseRepository;
+import com.team14.ibe.repository.SendOfferRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,11 +24,13 @@ import java.util.stream.Collectors;
 public class PurchaseService {
     private PurchaseRepository purchaseRepository;
     private RoomAvailabilityService roomAvailabilityService;
+    private SendOfferRepository sendOfferRepository;
 
     @Autowired
-    public PurchaseService(PurchaseRepository purchaseRepository, RoomAvailabilityService roomAvailabilityService) {
+    public PurchaseService(PurchaseRepository purchaseRepository, RoomAvailabilityService roomAvailabilityService, SendOfferRepository sendOfferRepository) {
         this.purchaseRepository = purchaseRepository;
         this.roomAvailabilityService = roomAvailabilityService;
+        this.sendOfferRepository = sendOfferRepository;
     }
 
     @Transactional
@@ -33,6 +38,13 @@ public class PurchaseService {
         try {
             long bookingCount = purchaseRepository.count() + 1;
             PurchaseEntity purchaseEntity = mapDtoToEntity(mappedData, bookingCount);
+            String travelEmail = purchaseEntity.getTravelemail();
+            if(purchaseEntity.isSendOffers()) {
+                SendOfferEntity sendOfferEntity = SendOfferEntity.builder()
+                        .userEmail(travelEmail)
+                        .build();
+                sendOfferRepository.save(sendOfferEntity);
+            }
             RoomAvailabilityRequestDTO roomAvailabilityResponseDTO = new RoomAvailabilityRequestDTO((long)purchaseEntity.getPropertyId(), (long)purchaseEntity.getRoomTypeId(), purchaseEntity.getStartDate(), purchaseEntity.getEndDate(), purchaseEntity.getBookingId(), purchaseEntity.getNumberOfRooms());
             boolean checkRoomAvailability = roomAvailabilityService.processRoomAvailabilities(roomAvailabilityResponseDTO, purchaseEntity, purchaseEntity.getBookingCount());
 
@@ -102,6 +114,7 @@ public class PurchaseService {
         entity.setPromotionPriceFactor(dto.getPromotionPriceFactor());
 
         entity.setNightlyRate(dto.getNightlyRate());
+        entity.setSendOffers(dto.isSendOffers());
 
         return entity;
     }
@@ -179,6 +192,7 @@ public class PurchaseService {
         dto.setNumberOfRooms(entity.getNumberOfRooms());
         dto.setProperty(entity.getPropertyId());
         dto.setRoomTypeId(entity.getRoomTypeId());
+        dto.setSendOffers(entity.isSendOffers());
         return dto;
     }
 }

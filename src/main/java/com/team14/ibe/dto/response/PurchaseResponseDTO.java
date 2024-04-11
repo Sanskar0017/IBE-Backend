@@ -53,4 +53,5 @@ public class PurchaseResponseDTO {
     private int numberOfRooms;
     private int property;
     private int roomTypeId;
+    private boolean sendOffers;
 }

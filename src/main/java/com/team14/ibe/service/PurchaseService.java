@@ -49,7 +49,6 @@ public class PurchaseService {
             boolean checkRoomAvailability = roomAvailabilityService.processRoomAvailabilities(roomAvailabilityResponseDTO, purchaseEntity, purchaseEntity.getBookingCount());
 
             if(checkRoomAvailability) {
-//                purchaseRepository.save(purchaseEntity);
                 return true;
             }
             return false;

@@ -53,7 +53,6 @@ public class EmailService {
 
     public void sendbookingEmail(String senderEmail, String recipientEmail, String emailSubject, String bookingEmailId) {
         PurchaseEntity purchaseEntity = purchaseRepository.findByBookingId(bookingEmailId);
-        System.out.println(purchaseEntity);
         String bookingLink = "http://localhost:5174/booking?bookingId=" + bookingEmailId;
         String bookingMessage = "<html><body style=\"font-family: Arial, sans-serif;\">" +
                 "<div style=\"font-weight: bold; letter-spacing: 1px;\">Booking ID: " + bookingEmailId + "</div>" +

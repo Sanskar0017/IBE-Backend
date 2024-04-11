@@ -13,10 +13,7 @@ public class PdfController {
     @PostMapping("/api/send-pdf")
     public String receivePdf(@RequestBody byte[] pdfData) {
         try {
-            // Define the file path where the PDF will be saved
             String filePath = "/booking.pdf";
-
-            // Write the PDF data to a file
             FileOutputStream fos = new FileOutputStream(filePath);
             fos.write(pdfData);
             fos.close();

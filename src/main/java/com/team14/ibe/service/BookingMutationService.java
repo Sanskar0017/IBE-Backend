@@ -62,19 +62,15 @@ public class BookingMutationService {
 
 
     public Map<String, Object> updateRoomAvailability(Long availabilityId, Long bookingId) {
-        System.out.println("update room availability ");
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
         httpHeaders.set("x-api-key", apiKey);
 
-        // Construct the GraphQL mutation query
         String graphqlQuery = "{ \"query\": \"mutation MyMutation { updateRoomAvailability(where: {availability_id: " + availabilityId + "}, data: {booking: {connect: {booking_id: " + bookingId + "}}}) { availability_id booking_id date } }\"}";
 
         HttpEntity<String> entity = new HttpEntity<>(graphqlQuery, httpHeaders);
-        System.out.println("entity is: " + entity);
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<String> responseEntity = restTemplate.exchange(graphqlEndpoint, HttpMethod.POST, entity, String.class);
-        System.out.println("response entity is: " + responseEntity);
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             JsonNode responseJson = objectMapper.readTree(responseEntity.getBody());

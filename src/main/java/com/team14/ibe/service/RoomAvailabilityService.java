@@ -53,12 +53,9 @@ public class RoomAvailabilityService {
                 roomAvailabilityMap.remove(booking.getRoomId());
             }
         }
-        System.out.println("Narrowed Booking: " + roomAvailabilityMap);
         int numberOfRooms = requestDTO.getNumberOfRooms();
         String bookingId = requestDTO.getBookingId();
-//        long confirmBooking = purchaseRepository.count() + 1;
         long confirmBooking = bookingCount;
-        System.out.println("Booking id mapped data is: " + confirmBooking);
         if (roomAvailabilityMap.size() < numberOfRooms) {
             log.info("Not enough room available");
             return false;
@@ -69,7 +66,6 @@ public class RoomAvailabilityService {
             PurchaseEntity purchaseEntityData = purchaseRepository.findByBookingId(bookingId);
             log.info("Current Booking id is: " + bookingId);
             log.info("purchase entity data is: " + purchaseEntityData);
-//            CreateBookingRequestDTO createBookingRequestDTO = new CreateBookingResponseDTOMapper().mapToBookingRequestDTO(purchaseEntityData);
             CreateBookingRequestDTO createBookingRequestDTO = new CreateBookingResponseDTOMapper().mapToBookingRequestDTO(purchaseEntity);
             log.info("create booking response dto: " + createBookingRequestDTO);
             CreateBookingResponse createBookingResponse = bookingMutationService.createBooking(createBookingRequestDTO);

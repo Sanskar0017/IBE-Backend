@@ -1,3 +1,6 @@
 
+s
+java:S1192""QDefine a constant instead of duplicating this literal "Operation Id: {}" 3 times.(ÂÌÃ“øÿÿÿÿ8ÅÅÚì1
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ç€ĞØé1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÉÅÚì1
+G	java:S1068"+Replace this use of System.out by a logger.(ÒçıÛ8­İÛì1

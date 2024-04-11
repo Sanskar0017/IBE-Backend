@@ -8,8 +8,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @ComponentScan
-@Configuration
-@EnableJpaRepositories("com.team14.ibe.repository")
+//@Configuration
+//@EnableJpaRepositories(basePackages = "com.team14.ibe.repository")
 public class IbeApplication {
     public static void main(String[] args) {
         SpringApplication.run(IbeApplication.class, args);

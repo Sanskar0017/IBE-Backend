@@ -1,0 +1,17 @@
+
+_
+java:S6813""BRemove this field injection and use constructor injection instead.(êæÄÞ8•…ù¹ì1
+_
+java:S6813$"BRemove this field injection and use constructor injection instead.(êæÄÞ8•…ù¹ì1
+_
+java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄÞ8•…ù¹ì1
+_
+java:S6813("BRemove this field injection and use constructor injection instead.(êæÄÞ8•…ù¹ì1
+]
+java:S1854U"@Remove this useless assignment to local variable "updateResult".(Ìâœ•8˜…ù¹ì1
+G	java:S1068"+Replace this use of System.out by a logger.(¶ÿ®Ð8›…ù¹ì1
+X	java:S125;"<This block of commented-out lines of code should be removed.(âÿ»ß8›…ù¹ì1
+L	java:S106="+Replace this use of System.out by a logger.(©Îšˆùÿÿÿÿ8›…ù¹ì1
+X	java:S125H"<This block of commented-out lines of code should be removed.(Û©°™8œ…ù¹ì1
+N
+java:S1481U"1Remove this unused "updateResult" local variable.(Ìâœ•8…ù¹ì1

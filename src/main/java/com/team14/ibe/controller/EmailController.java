@@ -1,7 +1,10 @@
 package com.team14.ibe.controller;
 
 import com.team14.ibe.dto.Request.EmailRequest;
+import com.team14.ibe.models.PurchaseEntity;
+import com.team14.ibe.repository.PurchaseRepository;
 import com.team14.ibe.service.EmailService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -14,6 +17,8 @@ import java.util.Random;
  * Controller class to handle email sending functionality.
  */
 @RestController
+@Slf4j
+
 public class EmailController {
 
     @Autowired
@@ -30,6 +35,12 @@ public class EmailController {
 
     @Value("${email.body}")
     private String bookingEmailId;
+    private PurchaseRepository purchaseRepository;
+
+    @Autowired
+    public EmailController(PurchaseRepository purchaseRepository) {
+        this.purchaseRepository = purchaseRepository;
+    }
 
     /**
      * Endpoint to send an email.
@@ -44,9 +55,13 @@ public class EmailController {
     }
 
     @GetMapping("/sendotpemail")
-    public ResponseEntity<String> sendStringEmail() {
+    public ResponseEntity<String> sendStringEmail(@RequestParam String bookingId) {
+        log.info("booking cancel email is: {}", bookingId);
+        PurchaseEntity purchaseEntity = purchaseRepository.findByBookingId(bookingId);
+        String recipientEmail = purchaseEntity.getBillingemail();
+        log.info("recipient email is: {}", recipientEmail);
         String message = generateOTP();
-        emailService.sendOTPEmail(senderEmail, "sarafsanskar468@gmail.com", emailSubject, message);
+        emailService.sendOTPEmail(senderEmail, recipientEmail, emailSubject, message);
         return ResponseEntity.ok(message);
     }
 

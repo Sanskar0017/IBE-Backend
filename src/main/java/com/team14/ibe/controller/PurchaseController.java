@@ -39,6 +39,7 @@ import com.team14.ibe.models.PurchaseEntity;
 import com.team14.ibe.repository.PurchaseRepository;
 import com.team14.ibe.service.BookingCancellationService;
 import com.team14.ibe.service.PurchaseService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -47,6 +48,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@Slf4j
 public class PurchaseController {
 
     private PurchaseService purchaseService;
@@ -87,6 +89,7 @@ public class PurchaseController {
 
     @PostMapping("/cancel-booking")
     public ResponseEntity<String> cancelBooking(@RequestParam String bookingId) {
+        log.info("booking cancellation id: {}", bookingId);
         try {
             boolean cancellationSuccess = bookingCancellationService.cancelBooking(bookingId);
             if (cancellationSuccess) {

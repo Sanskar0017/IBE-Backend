@@ -16,6 +16,5 @@ import lombok.NoArgsConstructor;
 @Builder
 public class SendOfferEntity {
     @Id
-    private long id;
     private String userEmail;
 }

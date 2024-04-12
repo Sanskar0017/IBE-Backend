@@ -39,10 +39,12 @@ public class PurchaseService {
             long bookingCount = purchaseRepository.count() + 1;
             PurchaseEntity purchaseEntity = mapDtoToEntity(mappedData, bookingCount);
             String travelEmail = purchaseEntity.getTravelemail();
+            System.out.println( "offer value: " +  purchaseEntity.isSendOffers());
             if(purchaseEntity.isSendOffers()) {
                 SendOfferEntity sendOfferEntity = SendOfferEntity.builder()
                         .userEmail(travelEmail)
                         .build();
+                System.out.println(sendOfferEntity);
                 sendOfferRepository.save(sendOfferEntity);
             }
             RoomAvailabilityRequestDTO roomAvailabilityResponseDTO = new RoomAvailabilityRequestDTO((long)purchaseEntity.getPropertyId(), (long)purchaseEntity.getRoomTypeId(), purchaseEntity.getStartDate(), purchaseEntity.getEndDate(), purchaseEntity.getBookingId(), purchaseEntity.getNumberOfRooms());

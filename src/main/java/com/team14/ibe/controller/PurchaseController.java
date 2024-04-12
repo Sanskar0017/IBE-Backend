@@ -70,6 +70,7 @@ public class PurchaseController {
             } else {
                 return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Failed to purchase");
             }
+
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Internal server error");
         }

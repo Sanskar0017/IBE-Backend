@@ -1,10 +1,8 @@
 
-X	java:S125"<This block of commented-out lines of code should be removed.(åÙ§Ê8†µ†í1
+X	java:S125"<This block of commented-out lines of code should be removed.(åÙ§Ê8†àå˜í1
 C
-java:S1452@"&Remove usage of generic wildcard type.(Ì˜Şé8Šµ†í1
-L	java:S106A"+Replace this use of System.out by a logger.(­ëêúÿÿÿÿ8‹µ†í1
-F	java:S106S"+Replace this use of System.out by a logger.(¥úá8µ†í1
-^
-java:S1128&"ARemove this unused import 'com.team14.ibe.models.PurchaseEntity'.(ù÷¨8µ†í1
+java:S1452B"&Remove usage of generic wildcard type.(Ì˜Şé8àå˜í1
+L	java:S106C"+Replace this use of System.out by a logger.(­ëêúÿÿÿÿ8‘àå˜í1
+F	java:S106U"+Replace this use of System.out by a logger.(¥úá8•àå˜í1
 S
-java:S10685"6Remove this unused "purchaseRepository" private field.(µø˜²8µ†í1
+java:S10687"6Remove this unused "purchaseRepository" private field.(µø˜²8šàå˜í1

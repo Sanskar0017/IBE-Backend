@@ -21,7 +21,7 @@ public class BookingCancellationService {
         this.bookingMutationService = bookingMutationService;
     }
 
-    public boolean cancelBooking(String bookingId) {
+    public boolean  cancelBooking(String bookingId) {
         try {
             List<AvailabilityEntity> bookingsToCancel = availabilityRepository.findByBookingId(bookingId);
             for (AvailabilityEntity booking : bookingsToCancel) {

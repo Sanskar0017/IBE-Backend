@@ -5,8 +5,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import jakarta.persistence.*;
-import java.util.Date;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -38,12 +36,10 @@ public class PurchaseEntity {
     private String endDate;
     private double nightlyRate;
     private double totalAmount;
-//    private double promocodeSpecialPrice;
     private double subtotal;
     private double taxAmount;
     private double vatAmount;
     private double totalPrice;
-//    private String imageLink;
     private int statusId;
     private int propertyId;
     private double priceFactor;
@@ -60,4 +56,6 @@ public class PurchaseEntity {
     private int roomTypeId;
     private long bookingCount;
     private boolean sendOffers;
+    @Column(name = "is_cancelled", nullable = false, columnDefinition = "boolean default false")
+    private boolean isCancelled;
 }

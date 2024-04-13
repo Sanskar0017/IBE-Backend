@@ -32,7 +32,6 @@ public class PurchaseDTO {
     private Date endDate;
     private double nightlyRate;
     private double totalAmount;
-//    private double promocodeSpecialPrice;
     private double subtotal;
     private double taxAmount;
     private double vatAmount;

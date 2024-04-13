@@ -4,14 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class BookingConcurrencyDTO {
-    private LocalDate checkInDate;
-    private LocalDate checkOutDate;
-    private Long roomId;
+public class CancelBookingRequestDTO {
+    private String bookingId;
+    private String email;
+    private long totalAmount;
 }

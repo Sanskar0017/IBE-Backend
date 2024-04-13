@@ -17,7 +17,6 @@ public class PdfController {
             FileOutputStream fos = new FileOutputStream(filePath);
             fos.write(pdfData);
             fos.close();
-            System.out.println("mil gaya");
             return "PDF file saved successfully";
         } catch (IOException e) {
             e.printStackTrace();

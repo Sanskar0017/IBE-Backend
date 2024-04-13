@@ -1,11 +1,5 @@
 
-Z
-java:S2589Œ"7Remove this expression which always evaluates to "true"(£ËžØýÿÿÿÿ8äÇü¶í1
-X	java:S125"<This block of commented-out lines of code should be removed.(åÙ§Ê8Ó°²í1
+Y
+java:S2589^"7Remove this expression which always evaluates to "true"(£ËžØýÿÿÿÿ8ªÁ°Åí1
 C
-java:S1452G"&Remove usage of generic wildcard type.(Ì˜Þé8Ø°²í1
-L	java:S106H"+Replace this use of System.out by a logger.(­ëêúÿÿÿÿ8Ù°²í1
-F	java:S106Z"+Replace this use of System.out by a logger.(¥úá8Ý°²í1
-]	java:S125`"<This block of commented-out lines of code should be removed.(±§úöýÿÿÿÿ8Þ°²í1
-S
-java:S1068:"6Remove this unused "purchaseRepository" private field.(µø˜²8á°²í1
+java:S1452%"&Remove usage of generic wildcard type.(Ì˜Þé8²Á°Åí1

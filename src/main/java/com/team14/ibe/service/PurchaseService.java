@@ -5,7 +5,6 @@ import com.team14.ibe.dto.Request.RoomAvailabilityRequestDTO;
 import com.team14.ibe.dto.response.PurchaseResponseDTO;
 import com.team14.ibe.models.PurchaseEntity;
 import com.team14.ibe.models.SendOfferEntity;
-import com.team14.ibe.repository.AvailabilityRepository;
 import com.team14.ibe.repository.PurchaseRepository;
 import com.team14.ibe.repository.SendOfferRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -175,7 +174,6 @@ public class PurchaseService {
         dto.setEndDate(endDate);
         dto.setNightlyRate(entity.getNightlyRate());
         dto.setTotalAmount(entity.getTotalAmount());
-//        dto.setPromocodeSpecialPrice(entity.getPromocodeSpecialPrice());
         dto.setSubtotal(entity.getSubtotal());
         dto.setTaxAmount(entity.getTaxAmount());
         dto.setVatAmount(entity.getVatAmount());

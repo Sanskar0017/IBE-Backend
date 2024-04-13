@@ -198,7 +198,7 @@ public class RoomPageService {
                     boolean isDeactivated = promotionNode.get("is_deactivated").asBoolean();
                     int minimumDaysOfStay = promotionNode.get("minimum_days_of_stay").asInt();
                     double priceFactor = promotionNode.get("price_factor").asDouble();
-                    PromotionResponseDTO promotionResponseDTO = new PromotionResponseDTO(promotionDescription, promotionId, promotionTitle, isDeactivated, minimumDaysOfStay, priceFactor);
+                    PromotionResponseDTO promotionResponseDTO = new PromotionResponseDTO(promotionDescription, promotionId, promotionTitle, isDeactivated, minimumDaysOfStay, priceFactor, false);
                     promotions.add(promotionResponseDTO);
                 }
             }

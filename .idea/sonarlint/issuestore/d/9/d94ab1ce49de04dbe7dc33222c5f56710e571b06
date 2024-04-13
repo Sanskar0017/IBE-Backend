@@ -1,7 +1,5 @@
 
-]	java:S125"<This block of commented-out lines of code should be removed.(¶È²àüÿÿÿÿ8ˆ¸²Çë1
-L	java:S106N"+Replace this use of System.out by a logger.(ÇáĞşÿÿÿÿ8³âöì1
 c
-java:S1858P"F"getStartDate" returns a string, there's no need to call "toString()".(ÇŒç8ÍÇ™øë1
+java:S1858"F"getStartDate" returns a string, there's no need to call "toString()".(ÇŒç8ÍÇ™øë1
 f
-java:S1858Q"D"getEndDate" returns a string, there's no need to call "toString()".(ÂÂ‘ƒÿÿÿÿÿ8ÏÇ™øë1
+java:S1858"D"getEndDate" returns a string, there's no need to call "toString()".(ÂÂ‘ƒÿÿÿÿÿ8ÏÇ™øë1

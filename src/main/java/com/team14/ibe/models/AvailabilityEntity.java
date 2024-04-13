@@ -12,7 +12,6 @@ import jakarta.persistence.*;
 @Table(name = "availability")
 public class AvailabilityEntity {
     @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long availabilityId;
     private String bookingId;
 }

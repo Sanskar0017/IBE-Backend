@@ -16,5 +16,6 @@ public class PromotionResponseDTO {
     private boolean isDeactivated;
     private int minimumDaysOfStay;
     private double priceFactor;
+    private boolean isCancelled;
 }
 

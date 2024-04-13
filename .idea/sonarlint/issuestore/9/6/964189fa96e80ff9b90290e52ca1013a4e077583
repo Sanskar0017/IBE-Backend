@@ -1,8 +1,11 @@
 
-X	java:S125"<This block of commented-out lines of code should be removed.(åÙ§Ê8†àå˜í1
+Z
+java:S2589Œ"7Remove this expression which always evaluates to "true"(£ËØıÿÿÿÿ8äÇü¶í1
+X	java:S125"<This block of commented-out lines of code should be removed.(åÙ§Ê8Ó°²í1
 C
-java:S1452B"&Remove usage of generic wildcard type.(Ì˜Şé8àå˜í1
-L	java:S106C"+Replace this use of System.out by a logger.(­ëêúÿÿÿÿ8‘àå˜í1
-F	java:S106U"+Replace this use of System.out by a logger.(¥úá8•àå˜í1
+java:S1452G"&Remove usage of generic wildcard type.(Ì˜Şé8Ø°²í1
+L	java:S106H"+Replace this use of System.out by a logger.(­ëêúÿÿÿÿ8Ù°²í1
+F	java:S106Z"+Replace this use of System.out by a logger.(¥úá8İ°²í1
+]	java:S125`"<This block of commented-out lines of code should be removed.(±§úöıÿÿÿÿ8Ş°²í1
 S
-java:S10687"6Remove this unused "purchaseRepository" private field.(µø˜²8šàå˜í1
+java:S1068:"6Remove this unused "purchaseRepository" private field.(µø˜²8á°²í1

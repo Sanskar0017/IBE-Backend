@@ -1,4 +1,4 @@
-package com.team14.ibe.controller;//package com.team14.ibe.controller;
+package com.team14.ibe.controller;
 import com.team14.ibe.dto.Request.CancelBookingRequestDTO;
 import com.team14.ibe.dto.Request.PurchaseDTO;
 import com.team14.ibe.dto.response.PurchaseResponseDTO;
@@ -98,5 +98,14 @@ public class PurchaseController {
         }
     }
 
+    @PostMapping("/save-wallet")
+    public ResponseEntity<String> saveWallet(@RequestBody Wallet walletDTO) {
+        String email = walletDTO.getEmail();
+        long totalAmount = walletDTO.getTotalAmount();
+        Wallet wallet = new Wallet(email, totalAmount);
+        walletRepository.save(wallet);
 
+        log.info("Wallet saved successfully for email: {}", email);
+        return ResponseEntity.ok("Wallet saved successfully");
+    }
 }

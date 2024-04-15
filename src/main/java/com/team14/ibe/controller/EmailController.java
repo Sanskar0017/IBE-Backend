@@ -4,6 +4,7 @@ import com.team14.ibe.dto.Request.EmailRequest;
 import com.team14.ibe.models.PurchaseEntity;
 import com.team14.ibe.repository.PurchaseRepository;
 import com.team14.ibe.service.EmailService;
+import com.team14.ibe.service.PurchaseService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -67,7 +68,14 @@ public class EmailController {
 
     @PostMapping("/sendbookingemail")
     public ResponseEntity<String> sendBookingEmail(@RequestParam String bookingId) {
-        emailService.sendbookingEmail(senderEmail, "sarafsanskar468@gmail.com", emailSubject, bookingId);
+
+        PurchaseEntity purchaseEntity = purchaseRepository.findByBookingId(bookingId);
+        String email = "sarafsanskar468@gmail.com";
+        if(purchaseEntity != null) {
+            email = purchaseEntity.getTravelemail();
+        }
+
+        emailService.sendbookingEmail(senderEmail, email, emailSubject, bookingId);
         return new ResponseEntity<>("Booking email sent successfully!", HttpStatus.OK);
     }
 
